@@ -6,10 +6,11 @@ from flask import session, request
 def create_player():
     if 'player' not in session:
         session['player'] = {
-            'name': "",
-            'visited_scenes': [],
-            'vars': {},
-            'history': [],
+            "name": "",
+            "history": [],
+            "visited": [],
+            "vars": {},
+            "inventory": []
         }
 
 
@@ -86,3 +87,5 @@ def reset_history_and_vars():
     p['history'] = []
     p['vars'] = {}
     session['player'] = p
+
+

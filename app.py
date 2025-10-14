@@ -192,6 +192,9 @@ def trey_start():
 @app.get("/trey/<scene_id>")
 def scene_trey(scene_id):
     scene = get_trey(scene_id)
+    if scene_id == "W-002" and "Chain Shotgun" and "Flak Vest" not in get_inventory():
+        add_to_inventory("Chain Shotgun")
+        add_to_inventory("Flak Vest")
     if compute_display_choices:
         scene = dict(scene)
         scene['choices'] = compute_display_choices(scene, session.get('player', {}))
@@ -271,8 +274,10 @@ def add_player_name(s: str):
 
 @app.context_processor
 def _inject_player():
+    player = session.get("player", {})
+    inventory = player.get("inventory", [])
+    return {"player": player, "inventory": inventory}
     return {"player": session.get("player", {})}
-
 
 # --- Set player name (simple form) ---
 @app.get("/name")
@@ -305,7 +310,25 @@ def _init_and_track_player():
     create_player()
     add_history(request.path, limit=200)
     mark_scene_seen()
+# --- inventory. ---
+def get_inventory():
+    return session.get('player', {}).get('inventory', [])
 
+def add_to_inventory(item):
+    player = session.get('player', {})
+    inventory = player.get('inventory', [])
+    if item not in inventory:  # Avoid duplicates if you want
+        inventory.append(item)
+    player['inventory'] = inventory
+    session['player'] = player
+
+def remove_from_inventory(item):
+    player = session.get('player', {})
+    inventory = player.get('inventory', [])
+    if item in inventory:
+        inventory.remove(item)
+    player['inventory'] = inventory
+    session['player'] = player
 
 # --- Main entry ---
 if __name__ == "__main__":

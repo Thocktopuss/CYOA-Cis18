@@ -37,6 +37,17 @@
   <p> {{ scene.exit_line | add_player_name | replace_all_newlines |safe }}</p>
 {% endif %}
 
+{% if inventory %}
+  <label for="inventory-dropdown">Inventory:</label>
+  <select id="inventory-dropdown" name="inventory">
+    {% for item in inventory %}
+      <option value="{{ item }}">{{ item }}</option>
+    {% endfor %}
+  </select>
+{% else %}
+  <p><em>You have no items.</em></p>
+{% endif %}
+
 <div class="crossroads_footer">
   <a class="btn" href="{{ url_for('home') }}">Back to Crossroads</a>
 </div>
