@@ -69,3 +69,4 @@ Stick to the schema above so the app can load all files without special cases.
 Commit your file to the repo under /static/data/.
 
 Test by running the Flask app and clicking your story from the crossroads menu.
+

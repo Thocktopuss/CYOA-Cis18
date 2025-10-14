@@ -4,34 +4,40 @@
 {% block content %}
 <h1>{{ scene.title }}</h1>
 
-<p><strong>ID:</strong> {{ scene.scene_id }} • <strong>Where/When:</strong> {{ scene.where_when }}</p>
+  <p><strong>Where/When:</strong> {{ scene.where_when | add_player_name | replace_all_newlines }}</p>
 
-<p>{{ scene.text | replace_all_newlines}}</p>
+  <p>{{ scene.text | add_player_name | replace_all_newlines }}</p>
 
 <div class="choices">
-    {% for c in scene.choices %}
-    {% set nextid = (c.next_id|string).strip() %}
-    {% if nextid == 'END' %}
-    <a class="btn" href="{{ url_for('the_end') }}">
-        {{ c.label or 'Finish' }}
-    </a>
-    {% elif nextid == 'DIE' %}
-    <a class="btn" href="{{ url_for('death', msg=(c.death_text or 'Your story ends here.')) }}">
-        {{ c.label or 'You Died' }}
-    </a>
-    {% else %}
-    <a class="btn" href="{{ url_for(base_endpoint, scene_id=nextid) }}">
-        {{ c.label }} ({{ nextid }})
-    </a>
-    {% endif %}
-    {% endfor %}
-</div>
 
+
+  {% for c in scene.choices %}
+  {% set nextid = (c.next_id|string).strip() %}
+  {% set default_btn_class = 'btn-a' if loop.index == 1 else 'btn-b' if loop.index == 2 else 'btn-c' if loop.index == 3 else 'btn-a' %}
+  {% set variant = (c.variant|string).lower() if c.variant is defined else '' %}
+  {% set color = (c.color|string).lower() if c.color is defined else '' %}
+  {% set btn_class = 'btn-danger' if (variant in ['danger','violent','red']) or (color == 'red') else default_btn_class %}
+
+  {% if nextid == 'END' %}
+  <a class="btn {{ btn_class }}" href="{{ url_for('the_end') }}">
+    {{ c.label or 'Finish' }}
+  </a>
+  {% elif nextid == 'DIE' %}
+  <a class="btn {{ btn_class }}" href="{{ url_for('death', msg=(c.death_text or 'Your story ends here.')) }}">
+    {{ c.label or 'You Died' }}
+  </a>
+  {% else %}
+  <a class="btn {{ btn_class }}" href="{{ url_for(base_endpoint, scene_id=nextid) }}">
+    {{ c.label }}
+  </a>
+  {% endif %}
+  {% endfor %}
+</div>
 {% if scene.exit_line %}
-<p><em>Exit:</em> {{ scene.exit_line }}</p>
+  <p> {{ scene.exit_line | add_player_name | replace_all_newlines |safe }}</p>
 {% endif %}
 
-<div class="choices" style="margin-top:12px">
-    <a class="btn" href="{{ url_for('home') }}">Back to Crossroads</a>
+<div class="crossroads_footer">
+  <a class="btn" href="{{ url_for('home') }}">Back to Crossroads</a>
 </div>
 {% endblock %}

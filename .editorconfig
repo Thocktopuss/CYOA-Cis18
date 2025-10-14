@@ -1,0 +1,33 @@
+# Top-level EditorConfig, this is to make you code look neat and clean ,essentially  easier to read
+root = true
+
+# Global defaults
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# JSON: compact objects, no trailing commas
+[*.json]
+indent_size = 2
+max_line_length = off
+# Trailing commas aren't valid in JSON
+insert_final_newline = true
+
+# HTML
+[*.html]
+indent_size = 2
+max_line_length = off
+
+# CSS
+[*.css]
+indent_size = 2
+max_line_length = off
+
+# Python
+[*.py]
+indent_size = 4
+max_line_length = 88

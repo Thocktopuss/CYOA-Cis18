@@ -1,0 +1,1317 @@
+[
+  {
+    "scene_id": "O-001",
+    "title": "Scene 1 - generic title", "note":" this is for if we ADD a chatbot or random storyteller",
+    "where_when": "its Late at night chris is over-caffinated and the AI API , is feeling like a great idea /S ",
+  "text": "Domo Arragato MR-ROBOTO............ rises from the table electricity surging to the floor ...................Domo Arragato MR-ROBOTO ",
+
+
+    "choices": [
+      {
+        "label": "Continue towards the ship",
+        "next_id": "O-001A"
+      }
+
+    ],
+    "exit_line": "This line leads to the next scene."
+  },
+  {
+    "scene_id": "O-001A",
+    "title": "Scene 1A - outcome of A",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked A from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-002"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-001B",
+    "title": "Scene 1B - outcome of B",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked B from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-002"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-002",
+    "title": "Scene 2 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": "O-002A"
+      },
+      {
+        "label": "Choice B",
+        "next_id": "O-002B"
+      }
+    ],
+    "exit_line": "This line leads to the next scene."
+  },
+  {
+    "scene_id": "O-002A",
+    "title": "Scene 2A - outcome of A",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked A from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-003"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-002B",
+    "title": "Scene 2B - outcome of B",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked B from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-003"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-003",
+    "title": "Scene 3 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": "O-003A"
+      },
+      {
+        "label": "Choice B",
+        "next_id": "O-003B"
+      }
+    ],
+    "exit_line": "This line leads to the next scene."
+  },
+  {
+    "scene_id": "O-003A",
+    "title": "Scene 3A - outcome of A",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked A from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-004"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-003B",
+    "title": "Scene 3B - outcome of B",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked B from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-004"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-004",
+    "title": "Scene 4 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": "O-004A"
+      },
+      {
+        "label": "Choice B",
+        "next_id": "O-004B"
+      }
+    ],
+    "exit_line": "This line leads to the next scene."
+  },
+  {
+    "scene_id": "O-004A",
+    "title": "Scene 4A - outcome of A",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked A from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-005"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-004B",
+    "title": "Scene 4B - outcome of B",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked B from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-005"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-005",
+    "title": "Scene 5 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": "O-005A"
+      },
+      {
+        "label": "Choice B",
+        "next_id": "O-005B"
+      }
+    ],
+    "exit_line": "This line leads to the next scene."
+  },
+  {
+    "scene_id": "O-005A",
+    "title": "Scene 5A - outcome of A",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked A from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-006"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-005B",
+    "title": "Scene 5B - outcome of B",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked B from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-006"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-006",
+    "title": "Scene 6 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": "O-006A"
+      },
+      {
+        "label": "Choice B",
+        "next_id": "O-006B"
+      }
+    ],
+    "exit_line": "This line leads to the next scene."
+  },
+  {
+    "scene_id": "O-006A",
+    "title": "Scene 6A - outcome of A",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked A from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-007"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-006B",
+    "title": "Scene 6B - outcome of B",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked B from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-007"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-007",
+    "title": "Scene 7 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": "O-007A"
+      },
+      {
+        "label": "Choice B",
+        "next_id": "O-007B"
+      }
+    ],
+    "exit_line": "This line leads to the next scene."
+  },
+  {
+    "scene_id": "O-007A",
+    "title": "Scene 7A - outcome of A",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked A from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-008"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-007B",
+    "title": "Scene 7B - outcome of B",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked B from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-008"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-008",
+    "title": "Scene 8 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": "O-008A"
+      },
+      {
+        "label": "Choice B",
+        "next_id": "O-008B"
+      }
+    ],
+    "exit_line": "This line leads to the next scene."
+  },
+  {
+    "scene_id": "O-008A",
+    "title": "Scene 8A - outcome of A",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked A from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-009"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-008B",
+    "title": "Scene 8B - outcome of B",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked B from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-009"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-009",
+    "title": "Scene 9 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": "O-009A"
+      },
+      {
+        "label": "Choice B",
+        "next_id": "O-009B"
+      }
+    ],
+    "exit_line": "This line leads to the next scene."
+  },
+  {
+    "scene_id": "O-009A",
+    "title": "Scene 9A - outcome of A",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked A from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-010"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-009B",
+    "title": "Scene 9B - outcome of B",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked B from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-010"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-010",
+    "title": "Scene 10 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": "O-010A"
+      },
+      {
+        "label": "Choice B",
+        "next_id": "O-010B"
+      }
+    ],
+    "exit_line": "This line leads to the next scene."
+  },
+  {
+    "scene_id": "O-010A",
+    "title": "Scene 10A - outcome of A",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked A from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-011"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-010B",
+    "title": "Scene 10B - outcome of B",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked B from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-011"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-011",
+    "title": "Scene 11 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": "O-011A"
+      },
+      {
+        "label": "Choice B",
+        "next_id": "O-011B"
+      }
+    ],
+    "exit_line": "This line leads to the next scene."
+  },
+  {
+    "scene_id": "O-011A",
+    "title": "Scene 11A - outcome of A",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked A from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-012"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-011B",
+    "title": "Scene 11B - outcome of B",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked B from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-012"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-012",
+    "title": "Scene 12 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": "O-012A"
+      },
+      {
+        "label": "Choice B",
+        "next_id": "O-012B"
+      }
+    ],
+    "exit_line": "This line leads to the next scene."
+  },
+  {
+    "scene_id": "O-012A",
+    "title": "Scene 12A - outcome of A",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked A from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-013"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-012B",
+    "title": "Scene 12B - outcome of B",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked B from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-013"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-013",
+    "title": "Scene 13 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": "O-013A"
+      },
+      {
+        "label": "Choice B",
+        "next_id": "O-013B"
+      }
+    ],
+    "exit_line": "This line leads to the next scene."
+  },
+  {
+    "scene_id": "O-013A",
+    "title": "Scene 13A - outcome of A",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked A from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-014"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-013B",
+    "title": "Scene 13B - outcome of B",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked B from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-014"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-014",
+    "title": "Scene 14 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": "O-014A"
+      },
+      {
+        "label": "Choice B",
+        "next_id": "O-014B"
+      }
+    ],
+    "exit_line": "This line leads to the next scene."
+  },
+  {
+    "scene_id": "O-014A",
+    "title": "Scene 14A - outcome of A",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked A from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-015"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-014B",
+    "title": "Scene 14B - outcome of B",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked B from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-015"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-015",
+    "title": "Scene 15 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": "O-015A"
+      },
+      {
+        "label": "Choice B",
+        "next_id": "O-015B"
+      }
+    ],
+    "exit_line": "This line leads to the next scene."
+  },
+  {
+    "scene_id": "O-015A",
+    "title": "Scene 15A - outcome of A",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked A from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-016"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-015B",
+    "title": "Scene 15B - outcome of B",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked B from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-016"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-016",
+    "title": "Scene 16 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": "O-016A"
+      },
+      {
+        "label": "Choice B",
+        "next_id": "O-016B"
+      }
+    ],
+    "exit_line": "This line leads to the next scene."
+  },
+  {
+    "scene_id": "O-016A",
+    "title": "Scene 16A - outcome of A",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked A from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-017"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-016B",
+    "title": "Scene 16B - outcome of B",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked B from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-017"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-017",
+    "title": "Scene 17 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": "O-017A"
+      },
+      {
+        "label": "Choice B",
+        "next_id": "O-017B"
+      }
+    ],
+    "exit_line": "This line leads to the next scene."
+  },
+  {
+    "scene_id": "O-017A",
+    "title": "Scene 17A - outcome of A",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked A from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-018"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-017B",
+    "title": "Scene 17B - outcome of B",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked B from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-018"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-018",
+    "title": "Scene 18 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": "O-018A"
+      },
+      {
+        "label": "Choice B",
+        "next_id": "O-018B"
+      }
+    ],
+    "exit_line": "This line leads to the next scene."
+  },
+  {
+    "scene_id": "O-018A",
+    "title": "Scene 18A - outcome of A",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked A from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-019"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-018B",
+    "title": "Scene 18B - outcome of B",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked B from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-019"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-019",
+    "title": "Scene 19 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": "O-019A"
+      },
+      {
+        "label": "Choice B",
+        "next_id": "O-019B"
+      }
+    ],
+    "exit_line": "This line leads to the next scene."
+  },
+  {
+    "scene_id": "O-019A",
+    "title": "Scene 19A - outcome of A",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked A from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-020"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-019B",
+    "title": "Scene 19B - outcome of B",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked B from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-020"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-020",
+    "title": "Scene 20 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": "O-020A"
+      },
+      {
+        "label": "Choice B",
+        "next_id": "O-020B"
+      }
+    ],
+    "exit_line": "This line leads to the next scene."
+  },
+  {
+    "scene_id": "O-020A",
+    "title": "Scene 20A - outcome of A",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked A from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-021"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-020B",
+    "title": "Scene 20B - outcome of B",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked B from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-021"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-021",
+    "title": "Scene 21 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": "O-021A"
+      },
+      {
+        "label": "Choice B",
+        "next_id": "O-021B"
+      }
+    ],
+    "exit_line": "This line leads to the next scene."
+  },
+  {
+    "scene_id": "O-021A",
+    "title": "Scene 21A - outcome of A",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked A from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-022"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-021B",
+    "title": "Scene 21B - outcome of B",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked B from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-022"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-022",
+    "title": "Scene 22 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": "O-022A"
+      },
+      {
+        "label": "Choice B",
+        "next_id": "O-022B"
+      }
+    ],
+    "exit_line": "This line leads to the next scene."
+  },
+  {
+    "scene_id": "O-022A",
+    "title": "Scene 22A - outcome of A",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked A from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-023"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-022B",
+    "title": "Scene 22B - outcome of B",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked B from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-023"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-023",
+    "title": "Scene 23 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": "O-023A"
+      },
+      {
+        "label": "Choice B",
+        "next_id": "O-023B"
+      }
+    ],
+    "exit_line": "This line leads to the next scene."
+  },
+  {
+    "scene_id": "O-023A",
+    "title": "Scene 23A - outcome of A",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked A from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-024"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-023B",
+    "title": "Scene 23B - outcome of B",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked B from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-024"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-024",
+    "title": "Scene 24 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": "O-024A"
+      },
+      {
+        "label": "Choice B",
+        "next_id": "O-024B"
+      }
+    ],
+    "exit_line": "This line leads to the next scene."
+  },
+  {
+    "scene_id": "O-024A",
+    "title": "Scene 24A - outcome of A",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked A from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-025"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-024B",
+    "title": "Scene 24B - outcome of B",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked B from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-025"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-025",
+    "title": "Scene 25 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": "O-025A"
+      },
+      {
+        "label": "Choice B",
+        "next_id": "O-025B"
+      }
+    ],
+    "exit_line": "This line leads to the next scene."
+  },
+  {
+    "scene_id": "O-025A",
+    "title": "Scene 25A - outcome of A",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked A from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-026"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-025B",
+    "title": "Scene 25B - outcome of B",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked B from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-026"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-026",
+    "title": "Scene 26 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": "O-026A"
+      },
+      {
+        "label": "Choice B",
+        "next_id": "O-026B"
+      }
+    ],
+    "exit_line": "This line leads to the next scene."
+  },
+  {
+    "scene_id": "O-026A",
+    "title": "Scene 26A - outcome of A",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked A from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-027"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-026B",
+    "title": "Scene 26B - outcome of B",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked B from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-027"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-027",
+    "title": "Scene 27 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": "O-027A"
+      },
+      {
+        "label": "Choice B",
+        "next_id": "O-027B"
+      }
+    ],
+    "exit_line": "This line leads to the next scene."
+  },
+  {
+    "scene_id": "O-027A",
+    "title": "Scene 27A - outcome of A",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked A from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-028"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-027B",
+    "title": "Scene 27B - outcome of B",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked B from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-028"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-028",
+    "title": "Scene 28 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": "O-028A"
+      },
+      {
+        "label": "Choice B",
+        "next_id": "O-028B"
+      }
+    ],
+    "exit_line": "This line leads to the next scene."
+  },
+  {
+    "scene_id": "O-028A",
+    "title": "Scene 28A - outcome of A",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked A from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-029"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-028B",
+    "title": "Scene 28B - outcome of B",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked B from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-029"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-029",
+    "title": "Scene 29 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": "O-029A"
+      },
+      {
+        "label": "Choice B",
+        "next_id": "O-029B"
+      }
+    ],
+    "exit_line": "This line leads to the next scene."
+  },
+  {
+    "scene_id": "O-029A",
+    "title": "Scene 29A - outcome of A",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked A from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-030"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-029B",
+    "title": "Scene 29B - outcome of B",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked B from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "O-030"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-030",
+    "title": "Scene 30 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": "O-030A"
+      },
+      {
+        "label": "Choice B",
+        "next_id": "O-030B"
+      }
+    ],
+    "exit_line": "This line leads to the next scene."
+  },
+  {
+    "scene_id": "O-030A",
+    "title": "Scene 30A - outcome of A",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked A from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "END"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-030B",
+    "title": "Scene 30B - outcome of B",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked B from the parent scene.",
+    "choices": [
+      {
+        "label": "Continue",
+        "next_id": "END"
+      }
+    ],
+    "exit_line": "Continue to the next numbered scene."
+  },
+  {
+    "scene_id": "O-030A",
+    "title": "Scene 30A - outcome of A",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked A from the parent scene.",
+    "choices": [
+      {
+        "label": "The End",
+        "next_id": "END"
+      }
+    ],
+    "exit_line": "Your story has reached its conclusion."
+  },
+  {
+    "scene_id": "O-030B",
+    "title": "Scene 30B - outcome of B",
+    "where_when": "generic place and time",
+    "text": "What happens if the player picked B from the parent scene.",
+    "choices": [
+      {
+        "label": "The End",
+        "next_id": "END"
+      }
+    ],
+    "exit_line": "Your story has reached its conclusion."
+  }
+]

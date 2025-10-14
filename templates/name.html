@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}{{ title or "Set Your Name" }}{% endblock %}
+{% block content %}
+  <h1>{{ title or "Set Your Name" }}</h1>
+  <form method="post" action="{{ url_for('name_submit', next=request.args.get('next')) }}" style="margin-top:16px">
+    <label for="player_name">Your name</label><br>
+    <input id="player_name" name="player_name" type="text" value="{{ name or '' }}" style="padding:8px; width: 60%">
+    <div class="choices" style="margin-top:12px">
+      <button type="submit">Save name</button>
+      <a class="btn" href="{{ url_for('home') }}">Back to Crossroads</a>
+    </div>
+  </form>
+{% endblock %}

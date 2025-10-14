@@ -1,8 +1,5 @@
 .venv/
-__pycache__/
 *.pyc
-.idea/
-.idea/
 *.iml
 # ====================================
 # Python
@@ -11,7 +8,6 @@ __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
-*.pyc
 *.pdb
 *.egg-info/
 *.egg
@@ -19,7 +15,6 @@ __pycache__/
 *.spec
 
 # Virtual environments
-.venv/
 venv/
 env/
 ENV/
@@ -27,10 +22,6 @@ ENV/
 *.venv
 
 # Byte-compiled / cache
-*.pyo
-*.pyd
-*.pdb
-__pycache__/
 .pytest_cache/
 .mypy_cache/
 .dmypy.json
@@ -39,18 +30,36 @@ __pycache__/
 # Build / dist
 build/
 dist/
-*.egg-info/
 .eggs/
 wheels/
 
 # Logs
 *.log
+# Coverage
+.coverage
+coverage.xml
+htmlcov/
+
+# Test tools
+.tox/
+.nox/
+
+# Type checkers
+
+.pytype/
+
+# JetBrains more
+*.ipr
+*.iws
+
+# Local env configs
+.envrc
+.env.local
 
 # ====================================
 # PyCharm / JetBrains IDE
 # ====================================
 .idea/
-*.iml
 out/
 
 # User-specific

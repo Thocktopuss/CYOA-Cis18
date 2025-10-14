@@ -1,61 +1,128 @@
-/* full-viewport canvas */
-html, body { height: 100%; margin: 0; }
+/* === Global Reset & Base === */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffcc99;  /* warm light orange text */
+  background: #0d0f18; /* fallback if gradient fails */
+}
 
-/* gradient background + center layout */
+/* === Gradient Background Screen === */
 .screen {
   min-height: 100%;
-  background: radial-gradient(1200px 800px at 70% 10%, #4782e8, #151722 60%, #0d0f18 100%);
+  background: radial-gradient(
+    1200px 800px at 70% 10%,
+    #4782e8,
+    #151722 60%,
+    #0d0f18 100%
+  );
   display: grid;
   place-items: center;
 }
 
-/* glassy center panel */
+/* === Glassy Center Panel === */
 .panel {
   width: min(800px, 90vw);
   padding: 24px;
-  background: rgb(3, 51, 121);
-  /* background-image: none;   // was blank; leaving it off */
-  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(3, 51, 121, 0.85); /* semi-transparent glass look */
+  border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 12px;
   color: #e0d9e5;
-  line-height: 1.5;
+  line-height: 1.6;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease;
+}
+.panel:hover {
+  transform: translateY(-2px);
 }
 
-/* button row */
-.choices { margin-top: 16px; display: flex; gap: 12px; }
-
-/* Styles for <button> elements inside .choices */
+/* === Buttons (Base DNA) === */
+a.btn,
 .choices button {
-  padding: 10px 16px;
-  border-radius: 10px;
-  border: 3px solid rgb(83, 201, 19); /* fixed: '3' and 'px' were split */
-  font-weight: normal;
-  font-size: 16px;
-  text-transform: uppercase;
-  background: #c9368a;
-  color: #5247e8;
-  cursor: pointer;
-}
-.choices button:hover { filter: brightness(1.1); }
-
-/* body text color */
-body {
-  color: #ffcc99;  /* light orange text */
-}
-
-/* links styled as buttons */
-a.btn {
   display: inline-block;
-  padding: 10px 16px;
-  border-radius: 8px;
-  background: #4bd5d5;       /* teal background */
-  color: #033379;            /* dark blue text */
-  border: 3px solid #4bd5d5; /* teal border */
+  padding: 12px 20px;
+  margin: 6px 0;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
   text-decoration: none;
+  border-radius: 10px;
+  border: 3px solid transparent;
   cursor: pointer;
+  transition: all 0.25s ease;
+  min-width: 160px;
+  text-align: center;
 }
 
-a.btn:hover {
-  filter: brightness(1.1);
+/* === Shared Hover/Focus === */
+a.btn:hover,
+.choices button:hover {
+  transform: scale(1.05);
+  filter: brightness(1.15);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.25);
 }
 
+/* === Choice Buttons Row === */
+.choices {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+}
+
+/* === Button Variants === */
+.btn-a {
+  background: linear-gradient(145deg, #1e90ff, #0057e7);
+  border-color: #1e90ff;
+  color: #fff;
+}
+.btn-a:hover {
+  background: linear-gradient(145deg, #3fa9f5, #007fff);
+  box-shadow: 0 0 12px #1e90ff;
+}
+
+.btn-b {
+  background: linear-gradient(145deg, #ff4747, #b71c1c);
+  border-color: #ff4747;
+  color: #fff;
+}
+.btn-b:hover {
+  background: linear-gradient(145deg, #ff6f6f, #d32f2f);
+  box-shadow: 0 0 12px #ff4747;
+}
+
+.btn-c {
+  background: linear-gradient(145deg, #2ecc71, #145a32);
+  border-color: #2ecc71;
+  color: #fff;
+}
+.btn-c:hover {
+  background: linear-gradient(145deg, #58d68d, #1e8449);
+  box-shadow: 0 0 12px #2ecc71;
+}
+
+/* === Links (Non-choice) === */
+a {
+  color: #4bd5d5;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: #6ff5f5;
+}
+
+/* === Titles === */
+h1, h2, h3 {
+  margin-top: 0;
+  color: #ffd27f;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.crossroads_footer {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+}

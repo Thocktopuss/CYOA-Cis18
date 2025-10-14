@@ -3,15 +3,29 @@
     "scene_id": "E-001",
     "title": "A Town Called Pidling",
     "where_when": "Pidling Town",
-    "text": "The air in Pidling is thick with the scent of woodsmoke and a lingering metallic tang from the forge. It's a small town, but its heart beats with the ambition of adventurers—a haven for those seeking fame, fortune, or just a little excitement. The main street is a jumble of humble homes and shops, all leading toward the grand stone building that houses the Adventurer's Guild.\nAs you step inside, the low murmur of conversations and the clinking of tankards fill the air. A stocky, cheerful woman with a weathered face smiles from behind a large wooden counter. \"Here to see the quest board?\" she asks, her voice a warm rasp. Before you can answer, she calls out to a figure sitting in the corner. \"Hey, Olly! Got a new one for you!\"\nA young man with wide, bright eyes and a disarming smile stands up, adjusts the leather pack on his back, and ambles over to you. This is Olly, your newly assigned guide. He seems to know everyone and everything, a living encyclopedia of the surrounding lands.",
-
-
+    "text": "The air in Pidling is thick with the scent of woodsmoke and a lingering metallic tang from the forge. It's a small town, but its heart beats with the ambition of adventurers—a haven for those seeking fame, fortune, or just a little excitement. The main street is a jumble of humble homes and shops, all leading toward the grand stone building that houses the Adventurer's Guild.\nAs you step inside, the low murmur of conversations and the clinking of tankards fill the air. A stocky, cheerful woman with a weathered face smiles from behind a large wooden counter. \"Here to see the quest board?\" she asks, her voice a warm rasp. Before you can answer, she calls out to a figure sitting in the corner. \"Hey, Olly! Got a new one for you!\"\n\nA young man with wide, bright eyes and a disarming smile stands up, adjusts the leather pack on his back, and ambles over to you. \"This is Olly, your newly assigned guide. He seems to know everyone and everything, a living encyclopedia of the surrounding lands.\"",
     "choices": [
       {
         "label": "Follow Olly",
-        "next_id": "E-002"
+        "next_id": "E-001A"
+      },
+      {
+        "label": "check name",
+        "next_id": "E-030"
       }
-
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-001A",
+    "title": "Quest Board",
+    "where_when": "Pidling Quest Board",
+    "text": "The Quest Board is a living testament to the dangers and opportunities of the world. It’s a massive, scarred slab of oak, so old that the grain has become a relief map of countless nail holes and rips. It's a collage of faded ink and fresh parchment, each tacked on with a mix of care and haste.\n\nThe top of the board is a mess of high-level requests, most of them marked with a blood-red DANGER stamp. Here, you see a notice from the dwarven mining community of Stonefall, offering a king's ransom for anyone brave enough to clear a dragon's nest from the Obsidian Peaks. The paper is torn and scorched at the edges. Next to it, a beautifully calligraphed letter from a noble house requests the retrieval of a stolen artifact from an ancient elven ruin, with the promise of land and title. The reward is immense, but the ink is fading from years of being unfulfilled.\n\nBelow these daunting tasks, the middle of the board is a mix of MEDIUM difficulty quests. A handful of towns are looking for help with bandit problems, their leaders' faces crudely drawn on a wanted poster. A farmer offers a simple reward of gold for the extermination of a giant spider infestation in his cellar. A frantic note from a traveling merchant asks for an escort through the Whispering Woods, a place known for its mischievous pixies and treacherous ground. These quests are for more advanced adventurers.",
+    "choices": [
+      {
+        "label": "Quests!",
+        "next_id": "E-002"
+        }
     ],
     "exit_line": ""
   },
@@ -19,7 +33,7 @@
     "scene_id": "E-002",
     "title": "Pidling Quest Board",
     "where_when": "Pidling Quest Board",
-    "text": "Olly gestures for you to follow him over to the main quest board, a massive plank of oak covered in countless scraps of parchment. He points to two specific quests.",
+    "text": "At the bottom of the board, where the new, low-level adventurers start, are the small jobs. Notices for lost pets and stray livestock dot the area. A baker offers his finest bread for anyone who can retrieve his misplaced family heirloom from the riverbed. But two quests stand out, freshly pinned and looking brand new \n\nOlly's eyes skim the board with practiced ease, his gaze settling on the bottom half. \"Ah, these will do nicely for us,\" he says with a cheerful grin. \"One is a quick win to get our feet wet, and the other...\" he pauses, his smile faltering a bit as he glances at the other quest. \"...well, the other is an express ticket to an early grave.",
     "choices": [
       {
         "label": "Quest 1: The Horned Rabbit Menace. ",
@@ -27,7 +41,8 @@
         },
       {
         "label": "Quest 2: The Lizard Horde of Blackfang Keep.",
-        "next_id": "E-004"
+        "next_id": "E-004",
+        "variant": "danger"
       }
     ],
     "exit_line": ""
@@ -39,8 +54,8 @@
     "text": "This parchment is a simple, handwritten note from the town's herbalists. It describes how an unusually aggressive population of horned rabbits has been terrorizing the herb patches just outside of Pidling, disrupting their harvests. The reward is a modest but respectable sum. Olly’s eyes light up. \"Ah, this is perfect for us! It's an easy win, good for a start.\"",
     "choices": [
       {
-        "label": "Continue",
-        "next_id": "E-003A"
+        "label": "Rabbit Problems",
+        "next_id": "E-005"
       }
     ],
     "exit_line": ""
@@ -52,25 +67,389 @@
     "text": "This one is a bit more formal, a printed notice from the Guild itself. It details a grave threat: a massive lizard horde led by a lesser dragon-kin has taken over an old dungeon. The reward is substantial, but the note also mentions that several high-level adventurer groups have already failed. Olly gives this quest a wide berth. \"I've heard whispers about that place. It's no joke. Trust me, you're not ready for that.\"",
     "choices": [
       {
-        "label": "Choice A",
-        "next_id": "E-002A"
+        "label": "Rabbit Problems",
+        "next_id": "E-005"
       }
     ],
     "exit_line": ""
   },
-
-
-
-
-
-
-
-
+   {
+    "scene_id": "E-005",
+    "title": "The Untamed Wilds",
+    "where_when": "Herb Patch",
+    "text": "You chose the Horned Rabbit quest. Olly leads you along a well-trodden dirt path that quickly fades into the rougher terrain of the Untamed Wilds. The path is a familiar one to him, and he fills the silence by chattering about every rustle in the bushes, every animal track, and the names of every plant you pass. The trees here are marked with the insignia of Pidling, a reassurance that you're still within a safe zone.\n\nSuddenly, Olly's constant monologue comes to a halt. He raises a hand to silence you and crouches low, pulling you down with him. \"Lookie there, friend,\" he whispers, a glint in his eye. \n\"There's your prey.\"",
+    "choices": [
+      {
+        "label": "Rabbits!",
+        "next_id": "E-006"
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-006",
+    "title": "Rabbit Problems",
+    "where_when": "Herb Patch, edge of the fields",
+    "text": "You peer through the tangled undergrowth and see a pair of horned rabbits nibbling on the village's prized herbs. They’re larger than you expected, their bodies plump from an easy diet. What stands out most, though, is the formidable horn protruding from each of their foreheads. It's a razor-sharp, spiral horn that they use not for defense, but to deftly pluck leaves from the bushes. It's a strange, unsettling sight.\n\nOlly takes a step back, a proud smile on his face. \"They're all yours,\" he says, giving you a firm but encouraging nod.\n\nWhen you were in town you were given sets of items.",
+    "choices": [
+      {
+        "label": "Sword and Shield",
+        "next_id": "E-007"
+      },
+      {
+        "label": "Battle Axe",
+        "next_id": "E-007A"
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-007",
+    "title": "Combat: Horned Rabbits (Sword and Shield)",
+    "where_when": "Herb Patch, mid-morning",
+    "text": "You chose the sword and shield. You silently approach the unsuspecting rabbits, a plan forming in your mind. The shield will be your defense, and the short sword your offense. You leap from the bushes, a battle cry on your lips. The pair of rabbits, completely caught off guard, panic. One is too slow and you strike it down instantly. The other springs clear of your attack, its beady eyes now fixed on you with pure, enraged fury. It lowers its head and charges, a streak of brown fur and deadly horn.\n\nWhat do you do?",
+    "choices": [
+      { "label": "Dodge clear", "next_id": "E-008S" },
+      { "label": "Meet it head on (brace behind your shield)", "next_id": "E-008" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-007A",
+    "title": "Combat: Horned Rabbits (Axe)",
+    "where_when": "Herb Patch, mid-morning",
+    "text": "You chose the battle axe. You burst from the brush with a sharp shout, keeping your hands low on the haft to keep the swing tight. The pair of horned rabbits jerk upright, startled—your first cut is a compact crescent that clips the nearer one behind the ear and drops it into the stems. The second springs clear, beady eyes blazing. It fixes on you, flattens its ears, and launches— a streak of brown fur with a spiral horn drilling straight for your ribs.\n\nWhat do you do?",
+    "choices": [
+      { "label": "Meet it head on (swing through)", "next_id": "E-007A-H" },
+      { "label": "Dodge clear at the last instant", "next_id": "E-008A" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-007A-H",
+    "title": "Take It Head On (Axe)",
+    "where_when": "Herb Patch, mid-morning",
+    "text": "You take it head on.\n\nThe world blurs into a chaotic mix of fur and blinding speed as the enraged rabbit slams into you. Its single horn, a miniature spear of bone, plunges directly into your chest. You gasp, the air leaving your lungs in a rush of searing pain. The rabbit thrashes, its powerful hind legs kicking wildly as it tries to dislodge its horn, twisting the wound and sending white-hot agony through your body.\n\nYou stumble backward, dropping your axe, and fall to the ground. The forest canopy above you is a swirling kaleidoscope of green and brown. A muffled sound reaches your ears, and you see Olly's face appear over you, a mask of sheer panic. He’s yelling, but the words are just a distant ringing in your ears. He kicks the rabbit, sending it flying off your chest and tumbling into the undergrowth, but it's too late. The light is already fading from your eyes.\n\nThe last thing you see is Olly's face, his mouth forming a desperate phrase as he kneels over you. \"Oh god, this wasn't supposed to happen!\"",
+    "choices": [
+      { "label": "Continue...", "next_id": "E-DEATH" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-008",
+    "title": "Clear of the Patch (Shield)",
+    "where_when": "Herb Patch perimeter",
+    "text": "You feel the smash of impact as the rabbit slams your shield. The horn bites and sticks fast in the wood; the animal thrashes, trying to wrench free. You step in, angle the rim, and drive your short blade home. The stems shiver, then still. Wind moves through the patch and the silence returns.\n\nOlly’s grin arrives a heartbeat later. \"Told you—make the patch feel unfriendly and they remember.\"",
+    "choices": [
+      { "label": "Continue...", "next_id": "E-009" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-008S",
+    "title": "Combat: Dodge Clear (Sword)",
+    "where_when": "Herb Patch perimeter",
+    "text": "You shift as the charge commits. The rabbit rockets past; bark explodes as its spiral horn punches into an oak and sticks fast. It kicks and scrabbles, trapped by its own momentum. You step in on the blind side and finish it clean. The stems tremble, then go still.",
+    "choices": [
+      { "label": "Continue...", "next_id": "E-009" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-008A",
+    "title": "Clear of the Patch (Axe)",
+    "where_when": "Herb Patch perimeter",
+    "text": "You pivot as the charge commits and the rabbit rockets past. Bark splinters as its spiral horn punches into an oak and lodges there, the creature kicking furiously to pull free. You step to the blind side and bring the axe down in a short, controlled chop. The stems tremble, then go still. The patch breathes again.\n\nOlly exhales. \"Clean work,\" he says, crouching to check the bent stalks and gnawed leaves.",
+    "choices": [
+      { "label": "Continue...", "next_id": "E-009" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-009",
+    "title": "After the Patch — Proof of Kill",
+    "where_when": "Herb Patch perimeter",
+    "text": "As he crouches among the herbs, checking the damage with quick, careful hands, Olly looks up and taps the creature’s hind legs. \"Guild'll want proof,\" he says. \"For vermin and pests it’s the left hind foot—standard tally token. Bigger marks get tusks, tags, or teeth. And if you don’t dry it, your pack’ll smell like a midden in two days.\"\n\nHe pulls out a small, sharp knife and expertly severs the rabbit's horn and one of its hind feet, demonstrating the correct technique. \"See?\" he says, holding up the two items. \"A clean horn, and the foot for the guild. Simple. The bounty is just the start, though. These horns might fetch a good price from a collector, and the meat is good if you want it.\" He places the tokens into a small pouch. \"But the bounty is the easy part. The real prize is the materials. The horns from some creatures, the scales from others. Sometimes the quest is just a way to get you close to the true treasure.\"\n\nHe stands up and gestures to the second rabbit. \"Alright, your turn. Cut close to the joint.\"",
+    "choices": [
+      { "label": "Collect and move on", "next_id": "E-011" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-011",
+    "title": "Back to the Guild",
+    "where_when": "Adventurers’ Guild hall, late afternoon",
+    "text": "With the waxed pouch tucked away, you and Olly shoulder through the Guild doors. Warm lamplight and low laughter roll out; maps and notices line the walls; tables crowded with gear and familiar faces. Behind the counter, the same stocky receptionist from earlier looks up and grins, her rasp soft. \"Back already?\"\n\nShe tips her chin at Olly. \"Think your friend can handle themself?\" He answers with an easy nod.\n\nHer gaze drops to the bundle at your belt. \"Horns, eh? Don’t just let the ledger pay you. Take those to the jeweler on Mill Street—folk set ’em into pins and charms. Might fetch you a pretty penny.\"\n\nShe takes the feet from you and stamps the book with a satisfying thunk, the sound swallowed by the comfortable buzz of parties reuniting and planning their next run.",
+    "choices": [
+      { "label": "Leave", "next_id": "E-012" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-012",
+    "title": "Tavern on Reward Night",
+    "where_when": "The Thistle & Anvil, twilight",
+    "text": "You say your goodbye's and thank Olly for their time. You head out into the streets. Pidling’s tavern is a deep breath of warmth and spice after a day in the hedgerow. You head to the place you found lodging when you stumbled into town. The Thistle & Anvil. \n\nA hearth snaps. The stew is thick with barley and carrot; the bread comes with a glossy slab of butter. You pay and find a table near the wall where you can watch the room.\n\nFor a long while you let your shoulders settle, letting the hum of talk and the crackle of fire fill the spaces where worry usually lives.",
+    "choices": [
+      { "label": "Settle in and think", "next_id": "E-013" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-013",
+    "title": "A Week in Pidling",
+    "where_when": "A quiet corner table",
+    "text": "You let the stew’s steam fog your thoughts and walk them backward. A week since the crossroads. A week of odd jobs: milking in the chill dawn, hammering loose panes back into their frames, brushing dust from beams so old they creak when they breathe. Enough work to keep you fed, but not enough to move you forward.\n\nYarick found you in the stable there. He's a mid-level adventurer, easy smile, the worn confidence of someone who has survived danger more than once. “Why only work for townsfolk?” he’d asked, leaning on the stall door. “Become an adventurer in the Guild. Take pay for real work.” You laughed and told him the truth: you couldn’t afford the fee, or the gear. He pressed a purse into your hand. “No strings,” he said, and meant it. “And talk to the smith—tell her Yarick sent you.”\n\nThe recent memory fills you with warmth. \"This place is pretty nice\" You take another spoonful and return to the present.",
+    "choices": [
+      { "label": "Finish your meal", "next_id": "E-014" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-014",
+    "title": "Ask for a Room",
+    "where_when": "The Thistle & Anvil, bar counter",
+    "text": "You carry your bowl to the counter and clear your throat. The keeper looks up with a practiced smile. You place coins on the scarred wood and ask for a room. His ledger appears, his quill scratches, and a key slides into your palm. “Second floor, third door. Water’s warm if you’re quick.”\n\nIt occurs to you that this will be your first bed in days. No straw. No stable. An actual door, and a night where the cold can’t find you.",
+    "choices": [
+      { "label": "Turn in for the night", "next_id": "E-015" }
+    ],
+    "gated_choices": [
+      { "label": "Take a bath before bed", "next_id": "E-015", "when": { "visited_any": ["E-008A"] } }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-015",
+    "title": "Morning Light",
+    "where_when": "A rented room above the tavern",
+    "text": "You wake in a bed that forgives mistakes. For a few breaths you lie still, half convinced the straw’s prickle will return. It doesn’t. You wash, buckle on your gear, and stand at the window while the street rubs the sleep from its eyes.\n\nYou could get used to this.",
+    "choices": [
+      { "label": "Head for the Guild", "next_id": "E-016" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-016",
+    "title": "Commotion at the Guild",
+    "where_when": "Adventurers’ Guild square, early morning",
+    "text": "You step out into a street already humming and aim for the Guild. The closer you get, the louder it gets—boots, voices, paper slapping wood. A handful of apprentices sprint past with armfuls of fresh fliers.\n\nYou’re swept into a knot of people near the steps. Someone shoves a flier into your hand. Big letters: “Monster flood! Triple compensation per kill.” The sketch is unmistakable—a rat—but the size comparison next to a human figure is the part that steals your breath. Dog-sized. Mean-looking.",
+    "choices": [
+      { "label": "Find the receptionist", "next_id": "E-017" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-017",
+    "title": "Where the Rats Are",
+    "where_when": "Guild counter, morning bustle",
+    "text": "The raspy-voiced receptionist is already working three conversations at once, but her smile hooks when she sees you. “Busy one,” she says, voice warm as ever. You ask where the rats are.\n\n“Down by the river,” she says, tapping the map with a blunt nail. “Old beaver den left to rot—rats patched it up with whatever they could drag home. Rat fur matted into the walls, bones shoved into the gaps. Looks like a child’s fort from a bad dream. Guild’s setting a staging camp just past the treeline. Short hike. Hard work.”\n\nShe eyes you, then glances at Olly. “You’re really interested? You only passed your entrance exam yesterday, and this is a steep jump into a coordinated sweep.” Her brow lifts. “Do you even have a party yet?”",
+    "choices": [
+      { "label": "Check the flier again", "next_id": "E-018" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-018",
+    "title": "Minimum Four",
+    "where_when": "Guild steps, map in hand",
+    "text": "You turn the flier over and find the small print: “Attack squads must register as a party of four or more. Compensation tallied per confirmed kill.” You look up to the square: runners, recruits, familiar faces gathering gear and gossip.\n\nThe wind flutters the corners of the paper. \n\n\"Time to make a Party.\"",
+    "choices": [
+      { "label": "Step back and consider your options", "next_id": "E-019" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-019",
+    "title": "Scene 19 - generic title",
+    "where_when": "generic place and time",
+    "text": "What is your name?\n\n",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": ""
+      },
+      {
+        "label": "Choice B",
+        "next_id": ""
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-020",
+    "title": "Scene 20 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": ""
+      },
+      {
+        "label": "Choice B",
+        "next_id": ""
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-021",
+    "title": "Scene 21 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": ""
+      },
+      {
+        "label": "Choice B",
+        "next_id": ""
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-022",
+    "title": "Scene 22 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": ""
+      },
+      {
+        "label": "Choice B",
+        "next_id": ""
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-023",
+    "title": "Scene 23 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": ""
+      },
+        {
+        "label": "Choice B",
+        "next_id": ""
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-024",
+    "title": "Scene 24 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": ""
+      },
+      {
+        "label": "Choice B",
+        "next_id": ""
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-025",
+    "title": "Scene 25 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": ""
+      },
+      {
+        "label": "Choice B",
+        "next_id": ""
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-026",
+    "title": "Scene 26 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": ""
+      },
+      {
+        "label": "Choice B",
+        "next_id": ""
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-027",
+    "title": "Scene 27 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": ""
+      },
+      {
+        "label": "Choice B",
+        "next_id": ""
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-028",
+    "title": "Scene 28 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": ""
+      },
+      {
+        "label": "Choice B",
+        "next_id": ""
+      }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-029",
+    "title": "Scene 29 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      {
+        "label": "Choice A",
+        "next_id": ""
+      },
+      {
+        "label": "Choice B",
+        "next_id": ""
+      }
+    ],
+    "exit_line": ""
+  },
     {
     "scene_id": "E-030",
     "title": "Scene 30 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "where_when": "your name is {{player.name}} ",
+    "text": "{{player.name}}, Your text (story) goes here.",
     "choices": [
       {
         "label": "Choice A",
@@ -83,6 +462,7 @@
     ],
     "exit_line": "This line leads to the next scene."
   },
+
   {
     "scene_id": "E-030A",
     "title": "Scene 30A - outcome of A",
@@ -108,5 +488,1215 @@
       }
     ],
     "exit_line": "Continue to the next numbered scene."
-  }
+  },
+  {
+    "scene_id": "E-031",
+    "title": "Scene 31 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-032",
+    "title": "Scene 32 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-033",
+    "title": "Scene 33 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-034",
+    "title": "Scene 34 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-035",
+    "title": "Scene 35 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-036",
+    "title": "Scene 36 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-037",
+    "title": "Scene 37 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-038",
+    "title": "Scene 38 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-039",
+    "title": "Scene 39 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-040",
+    "title": "Scene 40 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-041",
+    "title": "Scene 41 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-042",
+    "title": "Scene 42 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-043",
+    "title": "Scene 43 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-044",
+    "title": "Scene 44 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-045",
+    "title": "Scene 45 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-046",
+    "title": "Scene 46 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-047",
+    "title": "Scene 47 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-048",
+    "title": "Scene 48 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-049",
+    "title": "Scene 49 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-050",
+    "title": "Scene 50 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-051",
+    "title": "Scene 51 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-052",
+    "title": "Scene 52 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-053",
+    "title": "Scene 53 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-054",
+    "title": "Scene 54 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-055",
+    "title": "Scene 55 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-056",
+    "title": "Scene 56 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-057",
+    "title": "Scene 57 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-058",
+    "title": "Scene 58 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-059",
+    "title": "Scene 59 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-060",
+    "title": "Scene 60 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-061",
+    "title": "Scene 61 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-062",
+    "title": "Scene 62 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-063",
+    "title": "Scene 63 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-064",
+    "title": "Scene 64 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-065",
+    "title": "Scene 65 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-066",
+    "title": "Scene 66 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-067",
+    "title": "Scene 67 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-068",
+    "title": "Scene 68 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-069",
+    "title": "Scene 69 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-070",
+    "title": "Scene 70 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-071",
+    "title": "Scene 71 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-072",
+    "title": "Scene 72 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-073",
+    "title": "Scene 73 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-074",
+    "title": "Scene 74 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-075",
+    "title": "Scene 75 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-076",
+    "title": "Scene 76 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-077",
+    "title": "Scene 77 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-078",
+    "title": "Scene 78 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-079",
+    "title": "Scene 79 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-080",
+    "title": "Scene 80 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-081",
+    "title": "Scene 81 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-082",
+    "title": "Scene 82 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-083",
+    "title": "Scene 83 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-084",
+    "title": "Scene 84 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-085",
+    "title": "Scene 85 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-086",
+    "title": "Scene 86 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-087",
+    "title": "Scene 87 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-088",
+    "title": "Scene 88 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-089",
+    "title": "Scene 89 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-090",
+    "title": "Scene 90 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-091",
+    "title": "Scene 91 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-092",
+    "title": "Scene 92 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-093",
+    "title": "Scene 93 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-094",
+    "title": "Scene 94 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-095",
+    "title": "Scene 95 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-096",
+    "title": "Scene 96 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-097",
+    "title": "Scene 97 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-098",
+    "title": "Scene 98 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-099",
+    "title": "Scene 99 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-100",
+    "title": "Scene 100 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-101",
+    "title": "Scene 101 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-102",
+    "title": "Scene 102 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-103",
+    "title": "Scene 103 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-104",
+    "title": "Scene 104 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-105",
+    "title": "Scene 105 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-106",
+    "title": "Scene 106 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-107",
+    "title": "Scene 107 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-108",
+    "title": "Scene 108 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-109",
+    "title": "Scene 109 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-110",
+    "title": "Scene 110 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-111",
+    "title": "Scene 111 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-112",
+    "title": "Scene 112 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-113",
+    "title": "Scene 113 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-114",
+    "title": "Scene 114 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-115",
+    "title": "Scene 115 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-116",
+    "title": "Scene 116 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-117",
+    "title": "Scene 117 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-118",
+    "title": "Scene 118 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-119",
+    "title": "Scene 119 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-120",
+    "title": "Scene 120 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-121",
+    "title": "Scene 121 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-122",
+    "title": "Scene 122 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-123",
+    "title": "Scene 123 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-124",
+    "title": "Scene 124 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-125",
+    "title": "Scene 125 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-126",
+    "title": "Scene 126 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-127",
+    "title": "Scene 127 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-128",
+    "title": "Scene 128 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-129",
+    "title": "Scene 129 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-130",
+    "title": "Scene 130 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-131",
+    "title": "Scene 131 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-132",
+    "title": "Scene 132 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-133",
+    "title": "Scene 133 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-134",
+    "title": "Scene 134 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-135",
+    "title": "Scene 135 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-136",
+    "title": "Scene 136 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-137",
+    "title": "Scene 137 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-138",
+    "title": "Scene 138 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-139",
+    "title": "Scene 139 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-140",
+    "title": "Scene 140 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-141",
+    "title": "Scene 141 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-142",
+    "title": "Scene 142 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-143",
+    "title": "Scene 143 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-144",
+    "title": "Scene 144 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-145",
+    "title": "Scene 145 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-146",
+    "title": "Scene 146 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-147",
+    "title": "Scene 147 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-148",
+    "title": "Scene 148 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-149",
+    "title": "Scene 149 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+    "scene_id": "E-150",
+    "title": "Scene 150 - generic title",
+    "where_when": "generic place and time",
+    "text": "Your text (story) goes here.",
+    "choices": [
+      { "label": "Continue", "next_id": "" }
+    ],
+    "exit_line": ""
+  },
+  {
+  "scene_id": "E-DEATH",
+  "title": "The End",
+  "where_when": "The end of your journey.",
+  "text": "Your adventure has come to a swift and brutal end. The world fades to black, and the finality of your choices settles in. Your tale is over before it truly began, a cautionary lesson on biting off more than you can chew. You really should make wiser choices so you dont have any regrets.",
+  "choices": [
+    { "label": "Try again from Pidling", "next_id": "E-001" }
+  ],
+  "exit_line": "DON'T FORGET! YOU CAN USE YOUR BROWSERS' PAGE \"BACK/FORWARD\" TO NAVIGATE THE STORY IF YOU WISH TO MAKE THAT CHOICE AGAIN! \nHOPE YOU ENJOYED SO FAR!"
+}
 ]

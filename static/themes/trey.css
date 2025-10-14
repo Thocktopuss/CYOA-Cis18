@@ -50,3 +50,11 @@ a.btn {
   cursor: pointer;
 }
 a.btn:hover { filter: brightness(1.1); }
+
+.crossroads_footer {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+}

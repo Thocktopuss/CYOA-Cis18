@@ -1,59 +1,63 @@
 [
   {
     "scene_id": "N-001",
-    "title": "Scene 1 - generic title",
-    "where_when": "its mid morning, and you are heading North to the marina",
-    "text": "As you emerge from the path into the north end of town , you see an Near empty Marina. all the houses and shops along the waterfront have boarded  up thier doors, You can see people scurrying away wheelbarrows piled high others with baskets or bags loaded over thier shoulders, what the hell is going on , you say aloud to no one",
+    "title": "Scene 1 - fleeing the crossroads towards the Docks ",
+    "where_when": "as the crossroads fade into memory you arrive at the North part of Island. \n\nits mid morning, A bit cold  and you have arrived at the marina",
+    "text": "You emerge from the path into the north end of town. The marina is nearly empty. Only one ship remains, a ragged crew scrambling across its deck while a large man bellows orders.\n\nShops along the waterfront are hastily boarded, doors braced with mismatched scraps — splintered fence posts, broken crates, even pieces of furniture torn apart in a rush. The air feels tight with panic.\n\nPeople hurry through the streets with carts, baskets, and bags heaped with food and valuables. Some push wheelbarrows piled high; others clutch bundles over their shoulders. Eyes dart constantly toward the sea.\n\nYou stop and mutter, “What the hell is going on?”",
 
 
     "choices": [
-      {
-        "label": "Continue towards the ship",
-        "next_id": "N-001A"
-      }
+      { "label": "Hurry towards the ship", "next_id": "N-001A" },
+      { "label": "Run for the hills!!", "next_id": "N-001B" },
+      { "label": "Stay and figure it out", "next_id": "N-DEATH" }
+    ],
+    "exit_line": "How come I never come around the corner to eggs and bacon? I like eggs and bacon "
 
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "N-001A",
-    "title": "Scene 1A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-002"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "N-001B",
-    "title": "Scene 1B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "N-002"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
+},
+{
+"scene_id": "N-001A",
+"title": "You're skeptical, but a lack of information make you hope like the best  option.",
+"where_when": "",
+"text": "What happens if the player picked A from the parent scene.",
+"choices": [
+{ "label": "Continue", "next_id": "N-002" }
+],
+"exit_line": "Continue to the next numbered scene."
+},
+{
+"scene_id": "N-001B",
+"title": "Scene 1B - outcome of B",
+"where_when": "generic place and time",
+"text": "Run for the hills!!",
+"choices": [
+{ "label": "Continue", "next_id": "N-003" }
+],
+"exit_line": "Continue to the next numbered scene."
+},
+{
+"scene_id": "N-DEATH",
+"title": "Too Late",
+"where_when": "North docks",
+"text": "Your determined to discover the Malady that could be the cause of this Panic, in the distance  The crowd runs inland. The sea goes quiet, then slowly drains, your limbs frozen at the site of it. the ocean revealing it scars and debris on its sandy underbelly \n\nsuddenly you see it. the wall of water coming straight at you, what must have been moments feels like seconds, theres no where to go and nothing to do about it, the sky is blanketed over in salty darkness as the wave starts to crest \n.suddenly you feel your chest cave, as your lungs explode, instantly your crushed by a wall of cold wet Darkness.",
+"choices":[
+  {"label": "try again from the Marina", "next_id": "N-001"}
+],
+"exit_line": "Congratz!! Your story ends in Tragic fashion."
+},
+
+
   {
     "scene_id": "N-002",
     "title": "Scene 2 - generic title",
     "where_when": "generic place and time",
     "text": "Your text (story) goes here.",
+
     "choices": [
       {
-        "label": "Choice A",
-        "next_id": "N-002A"
+        "label": "Choice A", "next_id": "N-002A"
       },
       {
-        "label": "Choice B",
-        "next_id": "N-002B"
+        "label": "Choice B", "next_id": "N-002B"
       }
     ],
     "exit_line": "This line leads to the next scene."
