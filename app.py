@@ -192,7 +192,7 @@ def trey_start():
 @app.get("/trey/<scene_id>")
 def scene_trey(scene_id):
     scene = get_trey(scene_id)
-    if scene_id == "W-002" and "Chain Shotgun" and "Flak Vest" not in get_inventory():
+    if scene_id == "W-002A" and "Chain Shotgun" and "Flak Vest" not in get_inventory():
         add_to_inventory("Chain Shotgun")
         add_to_inventory("Flak Vest")
     if compute_display_choices:
@@ -310,7 +310,7 @@ def _init_and_track_player():
     create_player()
     add_history(request.path, limit=200)
     mark_scene_seen()
-# --- inventory. ---
+# --- inventory. Note to self: Need to add a way to reset inventory at crossroad ---
 def get_inventory():
     return session.get('player', {}).get('inventory', [])
 
