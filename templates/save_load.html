@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-{{ theme or 'crossroads' }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <style>
+        /* Basic styling for readability */
+        body { background-color: #1a1a1a; color: #f0f0f0; font-family: 'Courier New', Courier, monospace; text-align: center; padding: 20px;}
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; border: 2px solid #555; border-radius: 8px; background-color: #252525;}
+        h1 { color: #fff; border-bottom: 1px solid #444; padding-bottom: 10px; }
+        .slot-container { display: flex; flex-direction: column; gap: 20px; margin-top: 20px; }
+        .slot { border: 1px solid #444; padding: 15px; border-radius: 5px; background-color: #333; }
+        .slot h2 { margin-top: 0; }
+        .slot-info { margin-bottom: 15px; min-height: 40px; }
+        .slot-actions { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+        .btn { padding: 10px 15px; border: 1px solid #666; border-radius: 4px; cursor: pointer; font-weight: bold; text-decoration: none; display: inline-block; color: white; background-color: transparent; font-family: 'Courier New', Courier, monospace; }
+        .btn:hover { background-color: #444; }
+        .btn-save { border-color: #4CAF50; color: #4CAF50; }
+        .btn-save:hover { background-color: #4CAF50; color: white; }
+        .btn-load { border-color: #2196F3; color: #2196F3; }
+        .btn-load:hover { background-color: #2196F3; color: white; }
+        .btn-delete { border-color: #f44336; color: #f44336; }
+        .btn-delete:hover { background-color: #f44336; color: white; }
+        .btn-back { margin-top: 30px; border-color: #ccc; color: #ccc; }
+        .empty-text { color: #888; font-style: italic; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ title }}</h1>
+        <div class="slot-container">
+            {% for i in range(1, 4) %} {# Creates 3 save slots #}
+            <div class="slot">
+                <h2>Slot {{ i }}</h2>
+                {% set slot_id = i|string %}
+                {% if save_slots.get(slot_id) %}
+                    <div class="slot-info">
+                        <strong>Player:</strong> {{ save_slots[slot_id]['player_data']['name'] or 'Unnamed' }}<br>
+                        <strong>Saved:</strong> {{ save_slots[slot_id]['save_time'] }}
+                    </div>
+                    <div class="slot-actions">
+                        <form action="{{ url_for('load_game') }}" method="post" style="display: inline;">
+                            <input type="hidden" name="slot_id" value="{{ slot_id }}">
+                            <button type="submit" class="btn btn-load">Load</button>
+                        </form>
+                        <form action="{{ url_for('save_game') }}" method="post" style="display: inline;">
+                            <input type="hidden" name="slot_id" value="{{ slot_id }}">
+                            <button type="submit" class="btn btn-save">Overwrite Save</button>
+                        </form>
+                        <form action="{{ url_for('delete_save') }}" method="post" style="display: inline;">
+                            <input type="hidden" name="slot_id" value="{{ slot_id }}">
+                            <button type="submit" class="btn btn-delete">Delete</button>
+                        </form>
+                    </div>
+                {% else %}
+                    <div class="slot-info">
+                        <p class="empty-text">[ Empty Slot ]</p>
+                    </div>
+                    <div class="slot-actions">
+                        <form action="{{ url_for('save_game') }}" method="post" style="display: inline;">
+                            <input type="hidden" name="slot_id" value="{{ slot_id }}">
+                            <button type="submit" class="btn btn-save">Save to Slot {{ i }}</button>
+                        </form>
+                    </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        <a href="{{ back_url }}" class="btn btn-back">Back to Game</a>
+    </div>
+</body>
+</html>

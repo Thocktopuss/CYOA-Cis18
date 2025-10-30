@@ -1,1317 +1,776 @@
 [
   {
     "scene_id": "S-001",
-    "title": "Scene 1 - generic title",
-    "where_when": "generic text ",
-    "text": "generic text ",
-
-
+    "title": "The Unbearable Lightness of Morning",
+    "where_when": "Your bedroom. 7:00 AM. Too early.",
+    "text": "The alarm didn't go off. A strange, purple light pulses gently outside your window, humming a tune that sounds suspiciously like 80s synth-pop. Your head throbs. You need coffee. Urgently.",
     "choices": [
       {
-        "label": "Continue towards the ship",
+        "label": "Investigate the purple light.",
         "next_id": "S-001A"
+      },
+      {
+        "label": "Stumble towards the kitchen for coffee.",
+        "next_id": "S-001B"
       }
-
     ],
-    "exit_line": "This line leads to the next scene."
+    "exit_line": "The day has already made some questionable choices."
   },
   {
     "scene_id": "S-001A",
-    "title": "Scene 1A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "A Close Encounter of the Yard Kind",
+    "where_when": "Your bedroom window.",
+    "text": "You peek through the blinds. A colossal, shimmering jellyfish is hovering over your neighbor's prize-winning petunias. It seems to be scanning them with a curious intensity. Weird. Anyway, coffee.",
     "choices": [
       {
         "label": "Continue",
         "next_id": "S-002"
       }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "Priorities are, after all, priorities."
   },
   {
     "scene_id": "S-001B",
-    "title": "Scene 1B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
+    "title": "The Path of True Desire",
+    "where_when": "The hallway.",
+    "text": "You wisely ignore the potential end of the world in favor of the more pressing crisis: a complete lack of caffeine in your system. The kitchen, your sanctuary, awaits.",
     "choices": [
       {
         "label": "Continue",
         "next_id": "S-002"
       }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "The aroma of potential coffee calls to you."
   },
   {
     "scene_id": "S-002",
-    "title": "Scene 2 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "The Great Appliance Betrayal",
+    "where_when": "The Kitchen. A moment of truth.",
+    "text": "You reach the kitchen. The coffee maker, your beacon of hope, is dark. The little power light is off. You press the button. Nothing. You press it again, harder, as if that will help. The synth-pop humming is louder here.",
     "choices": [
       {
-        "label": "Choice A",
+        "label": "Check the fuse box.",
         "next_id": "S-002A"
       },
       {
-        "label": "Choice B",
+        "label": "Curse the coffee maker and all its ancestors.",
         "next_id": "S-002B"
       }
     ],
-    "exit_line": "This line leads to the next scene."
+    "exit_line": "This betrayal cuts deep."
   },
   {
     "scene_id": "S-002A",
-    "title": "Scene 2A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "A Puzzling Power Problem",
+    "where_when": "The basement.",
+    "text": "You head to the basement. All the fuses are fine, but they're glowing with the same eerie purple light. This is definitely above your pay grade. You need coffee and an electrician, in that order.",
     "choices": [
       {
         "label": "Continue",
         "next_id": "S-003"
       }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "Time to head back to the scene of the crime."
   },
   {
     "scene_id": "S-002B",
-    "title": "Scene 2B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
+    "title": "Catharsis, then Contact",
+    "where_when": "The Kitchen.",
+    "text": "You unleash a string of creative insults at the inanimate object. It doesn't fix the problem, but you feel slightly better. A shimmering, translucent tentacle phases through the wall next to you.",
     "choices": [
       {
         "label": "Continue",
         "next_id": "S-003"
       }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "Well, that's not something you see every day."
   },
   {
     "scene_id": "S-003",
-    "title": "Scene 3 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "First Contact, Second Thoughts",
+    "where_when": "The Kitchen. It's getting crowded.",
+    "text": "A vaguely jellyfish-shaped creature, shimmering with purple light, is now floating where your toaster used to be. It emits a series of clicks and whistles, which a small floating orb translates into a robotic voice: 'GREETINGS, CARBON-BASED MORNING PERSON.'",
     "choices": [
       {
-        "label": "Choice A",
+        "label": "Ask it if it knows what's wrong with the coffee maker.",
         "next_id": "S-003A"
       },
       {
-        "label": "Choice B",
+        "label": "Offer it a chair, then remember it's floating.",
         "next_id": "S-003B"
       }
     ],
-    "exit_line": "This line leads to the next scene."
+    "exit_line": "Hospitality is tricky with non-corporeal beings."
   },
   {
     "scene_id": "S-003A",
-    "title": "Scene 3A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "A Direct Approach",
+    "where_when": "The Kitchen.",
+    "text": "'AFFIRMATIVE,' the orb translates. 'WE HAVE TEMPORARILY DISABLED ALL NON-ESSENTIAL ELECTRONICS TO GAIN YOUR ATTENTION. YOUR BEAN-WATER DEVICE WAS DEEMED... NON-ESSENTIAL.' You feel a surge of profound indignation.",
     "choices": [
       {
         "label": "Continue",
         "next_id": "S-004"
       }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "They have declared war."
   },
   {
     "scene_id": "S-003B",
-    "title": "Scene 3B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
+    "title": "Awkward pleasantries",
+    "where_when": "The Kitchen.",
+    "text": "You gesture vaguely at a kitchen chair. 'SEATING IS... SUB-OPTIMAL FOR OUR PHYSIOLOGY. WE APPRECIATE THE GESTURE. WE ARE HERE TO DISCUSS A MATTER OF GRAVE IMPORTANCE.' It seems to gesture a tentacle at your dead coffee maker.",
     "choices": [
       {
         "label": "Continue",
         "next_id": "S-004"
       }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "The gravity of the situation is slowly dawning."
   },
   {
     "scene_id": "S-004",
-    "title": "Scene 4 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "A Galactic Grievance",
+    "where_when": "The kitchen, now an impromptu embassy.",
+    "text": "'YOUR PLANET HAS BEEN LEAKING... ENTERTAINMENT,' the orb buzzes. 'SPECIFICALLY, YOUR REALITY TELEVISION BROADCASTS. THEY HAVE REACHED OUR HOME WORLD AND ARE CAUSING... SOCIETAL DECAY.'",
     "choices": [
       {
-        "label": "Choice A",
+        "label": "Laugh. It has to be a joke.",
         "next_id": "S-004A"
       },
       {
-        "label": "Choice B",
+        "label": "Nod knowingly. That actually makes a lot of sense.",
         "next_id": "S-004B"
       }
     ],
-    "exit_line": "This line leads to the next scene."
+    "exit_line": "You're starting to feel personally responsible for intergalactic corruption."
   },
   {
     "scene_id": "S-004A",
-    "title": "Scene 4A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "Poorly Timed Amusement",
+    "where_when": "The Kitchen.",
+    "text": "You let out a snort of laughter. The jellyfish creature flashes a deep, angry red. 'THE COLLAPSE OF OUR CIVILIZATION IS NOT A SOURCE OF HUMOR, PRIMATE.'",
     "choices": [
       {
         "label": "Continue",
         "next_id": "S-005"
       }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "Note to self: aliens have no sense of irony before 9 AM."
   },
   {
     "scene_id": "S-004B",
-    "title": "Scene 4B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
+    "title": "Shared Disappointment",
+    "where_when": "The Kitchen.",
+    "text": "You sigh and rub your temples. 'Yeah, I get it. It's pretty bad here, too.' The jellyfish seems to soften, glowing a more empathetic shade of lavender. 'YOUR EMPATHY IS NOTED.'",
     "choices": [
       {
         "label": "Continue",
         "next_id": "S-005"
       }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "You have bonded with an alien over a shared hatred of bad TV."
   },
   {
     "scene_id": "S-005",
-    "title": "Scene 5 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "Exhibit A: The Real Housewives of Planet Glarzon",
+    "where_when": "Your kitchen.",
+    "text": "The orb projects a hologram showing jellyfish creatures in elaborate wigs throwing glasses of nutrient paste at each other. 'OUR YOUTH NOW ASPIRE TO BECOME 'INFLUENCERS' AND 'TABLE-FLIPPERS.' IT IS UTTER CHAOS.'",
     "choices": [
       {
-        "label": "Choice A",
+        "label": "'Who's their favorite?'",
         "next_id": "S-005A"
       },
       {
-        "label": "Choice B",
+        "label": "'Can we please just turn the coffee maker back on?'",
         "next_id": "S-005B"
       }
     ],
-    "exit_line": "This line leads to the next scene."
+    "exit_line": "The horror is universal."
   },
   {
     "scene_id": "S-005A",
-    "title": "Scene 5A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "Getting Sidetracked by Gossip",
+    "where_when": "The kitchen.",
+    "text": "'THE ONE NAMED KAREN-ZORP IS PARTICULARLY POPULAR, DESPITE HER PROBLEMATIC ENERGY FIELD.' The alien seems momentarily lost in the galactic drama before shaking itself.",
     "choices": [
       {
         "label": "Continue",
         "next_id": "S-006"
       }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "You're now invested in this drama."
   },
   {
     "scene_id": "S-005B",
-    "title": "Scene 5B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
+    "title": "Sticking to the Point",
+    "where_when": "The kitchen.",
+    "text": "'YOUR PRIORITIES ARE... FOCUSED,' the orb states. 'THE BEAN-WATER DEVICE WILL BE RE-ACTIVATED ONCE A SOLUTION IS REACHED. UNTIL THEN, NO.'",
     "choices": [
       {
         "label": "Continue",
         "next_id": "S-006"
       }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "Your quest continues."
   },
   {
     "scene_id": "S-006",
-    "title": "Scene 6 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "The Negotiating Table (is Your Kitchen Counter)",
+    "where_when": "Still the kitchen.",
+    "text": "So this is your life now. You're humanity's unwilling ambassador, negotiating the fate of reality television with a floating space jellyfish named Zorp before you've had your morning coffee. Zorp waits patiently.",
     "choices": [
       {
-        "label": "Choice A",
+        "label": "Try to explain the concept of 'guilty pleasure'.",
         "next_id": "S-006A"
       },
       {
-        "label": "Choice B",
+        "label": "Try to find a loophole in their complaint.",
         "next_id": "S-006B"
       }
     ],
-    "exit_line": "This line leads to the next scene."
+    "exit_line": "This is the most important negotiation of your life."
   },
   {
     "scene_id": "S-006A",
-    "title": "Scene 6A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "A Difficult Concept",
+    "where_when": "Kitchen/Embassy.",
+    "text": "You attempt to describe why beings watch things they know are bad. 'THE CONCEPT OF VOLUNTARY INTELLECTUAL DEGRADATION IS FOREIGN TO US,' Zorp's orb translates. 'FASCINating. AND TERRIFYING.'",
     "choices": [
       {
         "label": "Continue",
         "next_id": "S-007"
       }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "You have failed to justify humanity's poor taste."
   },
   {
     "scene_id": "S-006B",
-    "title": "Scene 6B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
+    "title": "Paging Dr. Loophole",
+    "where_when": "Kitchen/Embassy.",
+    "text": "'But is it *technically* leaking? Or are you just pirating our signals?' you ask. Zorp flashes an embarrassed shade of yellow. 'SIGNAL CONTAINMENT IS A UNIVERSAL RIGHT, BUT... OUR FIREWALLS ARE SUB-PAR.'",
     "choices": [
       {
         "label": "Continue",
         "next_id": "S-007"
       }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "You've found a crack in their argument!"
   },
   {
     "scene_id": "S-007",
-    "title": "Scene 7 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "The Ultimatum",
+    "where_when": "The kitchen.",
+    "text": "'REGARDLESS OF THE DELIVERY METHOD, THE CONTENT MUST CEASE. DESIGNATE A PLANETARY REPRESENTATIVE TO SIGN THE CEASE AND DESIST BROADCAST TREATY, OR THE POWER-OUTAGE REMAINS.' It gestures a tentacle at your coffee maker again for emphasis.",
     "choices": [
       {
-        "label": "Choice A",
+        "label": "Ask what a 'planetary representative' is.",
         "next_id": "S-007A"
       },
       {
-        "label": "Choice B",
+        "label": "Sigh and accept your fate as the chosen one.",
         "next_id": "S-007B"
       }
     ],
-    "exit_line": "This line leads to the next scene."
+    "exit_line": "The weight of the world is on your uncaffeinated shoulders."
   },
   {
     "scene_id": "S-007A",
-    "title": "Scene 7A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "Seeking Clarification",
+    "where_when": "The kitchen.",
+    "text": "'SOMEONE IN CHARGE. A... MANAGER, PERHAPS?' Zorp offers. 'WE WOULD LIKE TO SPEAK TO THE MANAGER OF THIS PLANET.' You have to physically restrain yourself from laughing.",
     "choices": [
       {
         "label": "Continue",
         "next_id": "S-008"
       }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "Oh, this is going to be difficult."
   },
   {
     "scene_id": "S-007B",
-    "title": "Scene 7B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
+    "title": "A Heavy Mantle",
+    "where_when": "The kitchen.",
+    "text": "'Fine. I'll do it. I'm the manager,' you say, with all the authority a person in their pajamas can muster. Zorp seems pleased, glowing a respectful green. 'EXCELLENT.'",
     "choices": [
       {
         "label": "Continue",
         "next_id": "S-008"
       }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "Your first act as manager will be to get coffee."
   },
   {
     "scene_id": "S-008",
-    "title": "Scene 8 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "A Manager's Prerogative",
+    "where_when": "The kitchen.",
+    "text": "Okay, you're the manager of Earth now. This is a big responsibility. Zorp is floating expectantly, treaty apparently at the ready. But your head is pounding. You can't make galactic policy on an empty stomach... or an empty mug.",
     "choices": [
       {
-        "label": "Choice A",
+        "label": "Demand coffee as your first term of negotiation.",
         "next_id": "S-008A"
       },
       {
-        "label": "Choice B",
+        "label": "Try to pass the buck to someone else.",
         "next_id": "S-008B"
       }
     ],
-    "exit_line": "This line leads to the next scene."
+    "exit_line": "With great power comes great need for caffeine."
   },
   {
     "scene_id": "S-008A",
-    "title": "Scene 8A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "Laying Down the Law",
+    "where_when": "The kitchen.",
+    "text": "'First rule of management: I get coffee. Turn on the machine, Zorp.' Your tone leaves no room for argument. After a moment, Zorp pulses. 'VERY WELL, MANAGER. YOUR TERMS ARE... LOGICAL.' The light on the coffee maker blinks on.",
     "choices": [
       {
         "label": "Continue",
         "next_id": "S-009"
       }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "Victory smells like brewing coffee."
   },
   {
     "scene_id": "S-008B",
-    "title": "Scene 8B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
+    "title": "Hot Potato Protocol",
+    "where_when": "The kitchen.",
+    "text": "'You know who you should really talk to? The people in Hollywood. They're the real managers of this mess.' Zorp considers this. 'THIS IS A BUREAUCRATIC ESCALATION. ARE YOU SURE?'",
     "choices": [
       {
         "label": "Continue",
         "next_id": "S-009"
       }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "You might have just made things much more complicated."
   },
   {
     "scene_id": "S-009",
-    "title": "Scene 9 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "The Sweet Elixir",
+    "where_when": "The kitchen.",
+    "text": "Whether through deft negotiation or by passing the buck, you have succeeded. The coffee maker is gurgling happily. The most beautiful sound in the world. You pour a cup, the rich aroma filling the air. Zorp watches, its single eye-stalk thing following the mug.",
     "choices": [
       {
-        "label": "Choice A",
+        "label": "Take a long, dramatic sip.",
         "next_id": "S-009A"
       },
       {
-        "label": "Choice B",
+        "label": "Offer Zorp a cup out of politeness.",
         "next_id": "S-009B"
       }
     ],
-    "exit_line": "This line leads to the next scene."
+    "exit_line": "The world is starting to make sense again."
   },
   {
     "scene_id": "S-009A",
-    "title": "Scene 9A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "A Moment of Bliss",
+    "where_when": "The kitchen.",
+    "text": "You drink deep. The caffeine hits your bloodstream like a tiny, benevolent lightning bolt. You are reborn. You are ready for diplomacy. 'Okay, Zorp,' you say, slamming the mug down. 'Let's talk treaties.'",
     "choices": [
       {
         "label": "Continue",
         "next_id": "S-010"
       }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "You are at peak performance."
   },
   {
     "scene_id": "S-009B",
-    "title": "Scene 9B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
+    "title": "An Unexpected Connoisseur",
+    "where_when": "The kitchen.",
+    "text": "You pour a second mug. 'Want some?' Zorp extends a hesitant tentacle and dips it in. Its entire body flashes with ecstatic colors. 'THIS... THIS IS ESSENTIAL! THE FLAVOR-ENHANCED BEAN-WATER! IT IS A REVELATION!'",
     "choices": [
       {
         "label": "Continue",
         "next_id": "S-010"
       }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "You may have just discovered a new intergalactic currency."
   },
   {
     "scene_id": "S-010",
-    "title": "Scene 10 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "The First Draft of the Treaty",
+    "where_when": "The kitchen.",
+    "text": "Zorp is now utterly captivated by the coffee. 'A TRADE AGREEMENT,' it buzzes excitedly. 'WE WILL PROVIDE AN UPGRADE TO YOUR PLANETARY FIREWALL IN EXCHANGE FOR REGULAR SHIPMENTS OF THIS... BEAN-WATER.' This seems too easy.",
     "choices": [
       {
-        "label": "Choice A",
+        "label": "Shake a tentacle on it.",
         "next_id": "S-010A"
       },
       {
-        "label": "Choice B",
+        "label": "Ask if there's a catch.",
         "next_id": "S-010B"
       }
     ],
-    "exit_line": "This line leads to the next scene."
+    "exit_line": "Is it a deal, or is there fine print?"
   },
   {
     "scene_id": "S-010A",
-    "title": "Scene 10A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "Premature Celebration",
+    "where_when": "The kitchen.",
+    "text": "You agree enthusiastically. Zorp buzzes with joy, then pauses. 'OF COURSE, THIS IS ONLY MY RECOMMENDATION. THE TREATY MUST BE RATIFIED BY MY SUPERIOR.' Your heart sinks.",
     "choices": [
       {
         "label": "Continue",
         "next_id": "S-011"
       }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "The dreaded middle-management."
   },
   {
     "scene_id": "S-010B",
-    "title": "Scene 10B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
+    "title": "Reading the Fine Print",
+    "where_when": "The kitchen.",
+    "text": "'What's the catch?' you ask. 'NO CATCH!' Zorp insists, a little too quickly. 'JUST A... FORMALITY. MY SUPERIOR, THE GRAND ADJUDICATOR BLOOP, MUST RATIFY THE AGREEMENT. HE WILL BE HERE SHORTLY.'",
     "choices": [
       {
         "label": "Continue",
         "next_id": "S-011"
       }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "The word 'Adjudicator' does not inspire confidence."
   },
   {
     "scene_id": "S-011",
-    "title": "Scene 11 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "The Auditor Arrives",
+    "where_when": "The kitchen, which is getting very crowded.",
+    "text": "The air crackles. A new being materializes next to the refrigerator. It's larger than Zorp, shaped like a crystalline shard, and radiates an aura of pure, joyless bureaucracy. 'I AM BLOOP,' its orb intones in a flat monotone. 'I HAVE REVIEWED YOUR PRELIMINARY FILING, ZORP. IT IS... DEFICIENT.'",
     "choices": [
       {
-        "label": "Choice A",
+        "label": "Offer Bloop some coffee.",
         "next_id": "S-011A"
       },
       {
-        "label": "Choice B",
+        "label": "Stay silent and try to look managerial.",
         "next_id": "S-011B"
       }
     ],
-    "exit_line": "This line leads to the next scene."
+    "exit_line": "The vibe in the room just plummeted."
   },
   {
     "scene_id": "S-011A",
-    "title": "Scene 11A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "A Failed Peace Offering",
+    "where_when": "The Kitchen/Audit.",
+    "text": "You gesture with the coffee pot. 'LIQUID STIMULANTS ARE A CLASS-C BARTER ITEM, BARELY ABOVE MONOCHROMATIC PEBBLES,' Bloop states dismissively. 'THIS AGREEMENT IS REJECTED. YOUR PLANET'S CULTURAL OUTPUT REMAINS A NET NEGATIVE.'",
     "choices": [
       {
         "label": "Continue",
         "next_id": "S-012"
       }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "So much for hospitality."
   },
   {
     "scene_id": "S-011B",
-    "title": "Scene 11B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
+    "title": "Silent Intimidation",
+    "where_when": "The Kitchen/Audit.",
+    "text": "You adopt your most serious 'manager' face. Bloop scans you. 'YOUR POSTURE INDICATES A PRIMITIVE ATTEMPT AT DOMINANCE. IT IS INEFFECTIVE. YOUR PROPOSAL IS REJECTED.'",
     "choices": [
       {
         "label": "Continue",
         "next_id": "S-012"
       }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "Well, that didn't work either."
   },
   {
     "scene_id": "S-012",
-    "title": "Scene 12 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "Show Me What You've Got",
+    "where_when": "The Kitchen.",
+    "text": "Bloop hovers menacingly. 'ZORP'S REPORT IS EMOTIONALLY COMPROMISED. I REQUIRE A DIRECT DEMONSTRATION OF YOUR SPECIES' CULTURAL VALUE. SHOW ME YOUR GREATEST ARTISTIC ACHIEVEMENT. IF IT IS DEEMED SUFFICIENT, NEGOTIATIONS MAY RESUME. IF NOT, I WILL ENACT THE GALACTIC CONTENT FILTER.'",
     "choices": [
       {
-        "label": "Choice A",
+        "label": "Show him a majestic nature documentary.",
         "next_id": "S-012A"
       },
       {
-        "label": "Choice B",
+        "label": "Show him a classic 90s action movie.",
         "next_id": "S-012B"
       }
     ],
-    "exit_line": "This line leads to the next scene."
+    "exit_line": "The fate of all Earthly media hangs in the balance."
   },
   {
     "scene_id": "S-012A",
-    "title": "Scene 12A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "Planet Earth",
+    "where_when": "The Living Room.",
+    "text": "You put on a documentary featuring sweeping vistas and majestic animals. Bloop analyzes it silently. 'ADEQUATE PHOTOGRAPHY OF NATIVE FAUNA. MINIMALLY INVASIVE NARRATION.' It seems neutral, which might be a good thing.",
     "choices": [
       {
         "label": "Continue",
         "next_id": "S-013"
       }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "Zorp decides now is the time to 'helpfully' explain human culture."
   },
   {
     "scene_id": "S-012B",
-    "title": "Scene 12B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
+    "title": "Die Hard",
+    "where_when": "The Living Room.",
+    "text": "You put on an action masterpiece. Explosions. One-liners. Bloop is silent. 'ANALYSIS: REPETITIVE DISCHARGE OF PROJECTILE WEAPONRY. HIGHLY IMPROBABLE SURVIVAL SCENARIOS.' You can't tell if it's impressed or disgusted.",
     "choices": [
       {
         "label": "Continue",
         "next_id": "S-013"
       }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "Zorp decides now is the time to 'helpfully' explain human culture."
   },
   {
     "scene_id": "S-013",
-    "title": "Scene 13 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "Lost in Translation",
+    "where_when": "The Living Room.",
+    "text": "As Bloop processes the media, Zorp floats forward, trying to provide context based on his own research into your broadcasts. The translator orb's voice suddenly shifts, becoming lazy and adolescent. 'Uhhh, heh heh. Like, this part is cool. 'Cause... like... explosions. Heh heh. Explosions are cool.' Bloop's crystalline form darkens. 'ZORP, WHAT IS THIS DEVIANT SPEECH PATTERN?' Zorp, now fully committed to his impression, replies, 'Heh heh. You said...'unit'. Heh m heh.'",
     "choices": [
       {
-        "label": "Choice A",
+        "label": "Facepalm.",
         "next_id": "S-013A"
       },
       {
-        "label": "Choice B",
+        "label": "Try to change the subject.",
         "next_id": "S-013B"
       }
     ],
-    "exit_line": "This line leads to the next scene."
+    "exit_line": "Zorp's extensive cultural research appears to have been sourced entirely from 1990s MTV."
   },
   {
     "scene_id": "S-013A",
-    "title": "Scene 13A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "The Facepalm Heard 'Round the Galaxy",
+    "where_when": "The Living Room.",
+    "text": "You bury your face in your hands. The gesture is not lost on Bloop. 'I SEE. THIS IS YOUR SPECIES' PEAK INTELLECTUAL STATE. A BEING OF LIMITED VOCABULARY, OBSESSED WITH MUNDANE NOISES AND PYROTECHNICS.'",
     "choices": [
       {
         "label": "Continue",
         "next_id": "S-014"
       }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "This is a diplomatic disaster."
   },
   {
     "scene_id": "S-013B",
-    "title": "Scene 13B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
+    "title": "Desperate Diversion",
+    "where_when": "The Living Room.",
+    "text": "'Hey, look over there! A dust bunny!' you yell, pointing. Bloop does not look. 'YOUR ATTEMPT TO DIVERT MY ATTENTION IS NOTED AND HAS BEEN LOGGED AS 'PATHETIC'. I HAVE ALL THE DATA I REQUIRE.'",
     "choices": [
       {
         "label": "Continue",
         "next_id": "S-014"
       }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "It was a long shot."
   },
   {
     "scene_id": "S-014",
-    "title": "Scene 14 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "The Sanction",
+    "where_when": "The Living Room.",
+    "text": "'JUDGEMENT: YOUR SPECIES IS CULTURALLY BANKRUPT,' Bloop declares. 'YOUR PRIMARY EXPORT IS IMBECILITY. I AM ENACTING THE GALACTIC CONTENT FILTER.' A low, ominous hum fills the house. The TV screen goes black. The coffee maker in the kitchen gives a final, mournful gurgle and dies.",
     "choices": [
       {
-        "label": "Choice A",
+        "label": "Plead for one last chance.",
         "next_id": "S-014A"
       },
       {
-        "label": "Choice B",
+        "label": "Blame Zorp.",
         "next_id": "S-014B"
       }
     ],
-    "exit_line": "This line leads to the next scene."
+    "exit_line": "This is it. The end of culture. And coffee."
   },
   {
     "scene_id": "S-014A",
-    "title": "Scene 14A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "Begging for Mercy",
+    "where_when": "The Living Room.",
+    "text": "'Wait! That's not representative! We have... other things!' you stammer. Bloop pauses. 'YOU HAVE TEN OF YOUR 'MINUTES' TO PRESENT A COUNTER-ARGUMENT BEFORE THE FILTER BECOMES PERMANENT.'",
     "choices": [
       {
         "label": "Continue",
         "next_id": "S-015"
       }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "The clock is ticking."
   },
   {
     "scene_id": "S-014B",
-    "title": "Scene 14B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
+    "title": "Passing the Blame",
+    "where_when": "The Living Room.",
+    "text": "'It's his fault!' you say, pointing at Zorp. Zorp shrinks, glowing a dim, apologetic blue. Bloop is unmoved. 'DELEGATING BLAME IS A TRAIT OF A FAILING MANAGER. NINE MINUTES REMAIN.'",
     "choices": [
       {
         "label": "Continue",
         "next_id": "S-015"
       }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "Okay, new plan needed. Fast."
   },
   {
     "scene_id": "S-015",
-    "title": "Scene 15 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "A Desperate Gambit",
+    "where_when": "The Living Room.",
+    "text": "Your mind races. What can save you now? Art failed. Action failed. Coffee failed. What is the one thing humanity has produced that is pure, universally beloved, and requires no complex explanation? You grab your phone.",
     "choices": [
       {
-        "label": "Choice A",
+        "label": "Find a cat video.",
         "next_id": "S-015A"
       },
       {
-        "label": "Choice B",
+        "label": "Find a video of a baby laughing.",
         "next_id": "S-015B"
       }
     ],
-    "exit_line": "This line leads to the next scene."
+    "exit_line": "It's time to bring out the big guns."
   },
   {
     "scene_id": "S-015A",
-    "title": "Scene 15A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "The Feline Solution",
+    "where_when": "The Living Room.",
+    "text": "You find a video of a small kitten trying to climb onto a ridiculously large dog and falling asleep. You hold the phone up to Bloop. 'Behold!'",
     "choices": [
       {
         "label": "Continue",
         "next_id": "S-016"
       }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "This is either genius or the stupidest idea you've ever had."
   },
   {
     "scene_id": "S-015B",
-    "title": "Scene 15B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
+    "title": "The Juvenile Solution",
+    "where_when": "The Living Room.",
+    "text": "You find a video of a baby laughing hysterically at a piece of paper being torn. You present it to Bloop. 'The sound of pure, uncomplicated joy!'",
     "choices": [
       {
         "label": "Continue",
         "next_id": "S-016"
       }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "Will the Adjudicator appreciate infant humor?"
   },
   {
     "scene_id": "S-016",
-    "title": "Scene 16 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "Analysis of a Predator",
+    "where_when": "The Living Room.",
+    "text": "Bloop focuses on the tiny screen. Its orb begins translating its internal analysis. 'ANALYZING... SUBJECT IS A SMALL, INEFFICIENT PREDATOR/DEVELOPMENTALLY INCOMPLETE PRIMATE. IT APPEARS TO BE DEFECTIVE... YET IT ELICITS A POSITIVE EMOTIONAL RESPONSE... THE LOGIC IS... ABSENT. IT IS... CHARMING? THE DATA IS INSUFFICIENT, BUT COMPELLING.'",
     "choices": [
       {
-        "label": "Choice A",
+        "label": "Show him another one. Quickly!",
         "next_id": "S-016A"
       },
       {
-        "label": "Choice B",
+        "label": "Press your advantage now.",
         "next_id": "S-016B"
       }
     ],
-    "exit_line": "This line leads to the next scene."
+    "exit_line": "You've found a crack in the bureaucratic armor!"
   },
   {
     "scene_id": "S-016A",
-    "title": "Scene 16A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "The Viral Barrage",
+    "where_when": "The Living Room.",
+    "text": "You unleash a torrent of humanity's finest work: cats in boxes, babies trying lemons, dogs with weird barks. Bloop is silent, its crystalline form softly pulsing with a warm, intrigued light. The ominous hum of the filter fades.",
     "choices": [
       {
         "label": "Continue",
         "next_id": "S-017"
       }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "You've stunned it into submission with cuteness."
   },
   {
     "scene_id": "S-016B",
-    "title": "Scene 16B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
+    "title": "The Diplomatic Push",
+    "where_when": "The Living Room.",
+    "text": "'You see? We're not just... that,' you say, gesturing towards the memory of Zorp's impression. 'We're also this. Illogical, inefficient, but... charming?' Bloop considers this. The ominous hum of the filter fades.",
     "choices": [
       {
         "label": "Continue",
         "next_id": "S-017"
       }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "You've argued your way out of cultural extinction."
   },
   {
     "scene_id": "S-017",
-    "title": "Scene 17 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "The Final Offer",
+    "where_when": "The Living Room.",
+    "text": "'THE FILTER IS SUSPENDED,' Bloop announces. 'A NEW PROPOSAL IS REQUIRED. THE VALUE OF YOUR 'BEAN-WATER' IS NOW RE-CLASSIFIED AS 'SIGNIFICANT' WHEN PAIRED WITH VIEWING OF 'CHARMINGLY INEFFICIENT' LIFEFORMS. WE WILL PROVIDE ADVANCED FIREWALL TECHNOLOGY.'",
     "choices": [
       {
-        "label": "Choice A",
+        "label": "Ask what they want in return.",
         "next_id": "S-017A"
       },
       {
-        "label": "Choice B",
+        "label": "Just agree before it changes its mind.",
         "next_id": "S-017B"
       }
     ],
-    "exit_line": "This line leads to the next scene."
+    "exit_line": "The terms of the treaty are being rewritten."
   },
   {
     "scene_id": "S-017A",
-    "title": "Scene 17A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "The Price of Peace",
+    "where_when": "The Living Room.",
+    "text": "'IN RETURN, YOUR PLANET WILL PROVIDE WEEKLY SHIPMENTS OF COFFEE BEANS AND A DEDICATED, LIVE-STREAMING FEED OF YOUR PLANET'S MOST CHARMING DOMESTICATED ANIMALS. THE REALITY SHOWS MUST STILL CEASE.'",
     "choices": [
       {
         "label": "Continue",
         "next_id": "S-018"
       }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "It's a strange price, but you can probably pay it."
   },
   {
     "scene_id": "S-017B",
-    "title": "Scene 17B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
+    "title": "A Quick Agreement",
+    "where_when": "The Living Room.",
+    "text": "'DEAL!' you shout. Bloop seems satisfied. 'A WISE DECISION, MANAGER. THE CONTRACT REQUIRES YOUR PLANET TO PROVIDE COFFEE AND A LIVE-STREAM OF CUTE ANIMALS. THE REALITY SHOWS MUST STILL CEASE.'",
     "choices": [
       {
         "label": "Continue",
         "next_id": "S-018"
       }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "You've committed Earth to becoming a galactic pet channel."
   },
   {
     "scene_id": "S-018",
-    "title": "Scene 18 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
+    "title": "The Earth-Glarzon Treaty",
+    "where_when": "The Living Room.",
+    "text": "A glowing holographic contract appears in the air. The terms are clear: coffee and pet videos in exchange for no cultural filter and an end to the power outages. Your coffee maker hums back to life. You are the planet's official Manager of Intergalactic Pet Relations.",
     "choices": [
       {
-        "label": "Choice A",
+        "label": "Sign the treaty and get on with your life.",
         "next_id": "S-018A"
       },
       {
-        "label": "Choice B",
+        "label": "Try to haggle to keep just one reality show.",
         "next_id": "S-018B"
       }
     ],
-    "exit_line": "This line leads to the next scene."
+    "exit_line": "One final choice for the Manager of Earth."
   },
   {
     "scene_id": "S-018A",
-    "title": "Scene 18A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "A New Day Dawns",
+    "where_when": "The Living Room.",
+    "text": "You press your thumb to the hologram. It flashes green. 'THE TREATY IS RATIFIED,' Bloop states. It and a very relieved-looking Zorp dematerialize. Your house is quiet, except for the beautiful sound of coffee brewing.",
     "choices": [
       {
-        "label": "Continue",
-        "next_id": "S-019"
+        "label": "The End",
+        "next_id": "END"
       }
     ],
-    "exit_line": "Continue to the next numbered scene."
+    "exit_line": "You saved the world before 9 AM. You've earned this cup of coffee."
   },
   {
     "scene_id": "S-018B",
-    "title": "Scene 18B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-019"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-019",
-    "title": "Scene 19 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-019A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-019B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "S-019A",
-    "title": "Scene 19A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-020"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-019B",
-    "title": "Scene 19B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-020"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-020",
-    "title": "Scene 20 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-020A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-020B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "S-020A",
-    "title": "Scene 20A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-021"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-020B",
-    "title": "Scene 20B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-021"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-021",
-    "title": "Scene 21 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-021A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-021B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "S-021A",
-    "title": "Scene 21A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-022"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-021B",
-    "title": "Scene 21B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-022"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-022",
-    "title": "Scene 22 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-022A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-022B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "S-022A",
-    "title": "Scene 22A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-023"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-022B",
-    "title": "Scene 22B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-023"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-023",
-    "title": "Scene 23 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-023A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-023B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "S-023A",
-    "title": "Scene 23A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-024"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-023B",
-    "title": "Scene 23B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-024"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-024",
-    "title": "Scene 24 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-024A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-024B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "S-024A",
-    "title": "Scene 24A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-025"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-024B",
-    "title": "Scene 24B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-025"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-025",
-    "title": "Scene 25 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-025A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-025B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "S-025A",
-    "title": "Scene 25A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-026"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-025B",
-    "title": "Scene 25B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-026"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-026",
-    "title": "Scene 26 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-026A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-026B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "S-026A",
-    "title": "Scene 26A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-027"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-026B",
-    "title": "Scene 26B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-027"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-027",
-    "title": "Scene 27 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-027A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-027B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "S-027A",
-    "title": "Scene 27A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-028"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-027B",
-    "title": "Scene 27B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-028"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-028",
-    "title": "Scene 28 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-028A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-028B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "S-028A",
-    "title": "Scene 28A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-029"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-028B",
-    "title": "Scene 28B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-029"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-029",
-    "title": "Scene 29 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-029A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-029B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "S-029A",
-    "title": "Scene 29A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-030"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-029B",
-    "title": "Scene 29B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "S-030"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-030",
-    "title": "Scene 30 - generic title",
-    "where_when": "generic place and time",
-    "text": "Your text (story) goes here.",
-    "choices": [
-      {
-        "label": "Choice A",
-        "next_id": "S-030A"
-      },
-      {
-        "label": "Choice B",
-        "next_id": "S-030B"
-      }
-    ],
-    "exit_line": "This line leads to the next scene."
-  },
-  {
-    "scene_id": "S-030A",
-    "title": "Scene 30A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "END"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-030B",
-    "title": "Scene 30B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "Continue",
-        "next_id": "END"
-      }
-    ],
-    "exit_line": "Continue to the next numbered scene."
-  },
-  {
-    "scene_id": "S-030A",
-    "title": "Scene 30A - outcome of A",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked A from the parent scene.",
+    "title": "One Last Haggle",
+    "where_when": "The Living Room.",
+    "text": "'Just one?' you plead. 'For... research?' Bloop goes still. 'WHICH ONE?' it asks. You name the trashiest show you can think of. Bloop pauses. '...FINE. KAREN-ZORP IS COMPELLING. BUT NO OTHERS.' It and Zorp vanish.",
     "choices": [
       {
         "label": "The End",
         "next_id": "END"
       }
     ],
-    "exit_line": "Your story has reached its conclusion."
-  },
-  {
-    "scene_id": "S-030B",
-    "title": "Scene 30B - outcome of B",
-    "where_when": "generic place and time",
-    "text": "What happens if the player picked B from the parent scene.",
-    "choices": [
-      {
-        "label": "The End",
-        "next_id": "END"
-      }
-    ],
-    "exit_line": "Your story has reached its conclusion."
+    "exit_line": "You saved coffee, cats, and a tiny slice of terrible television. A true diplomat."
   }
 ]
