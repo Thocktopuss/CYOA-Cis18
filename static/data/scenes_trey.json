@@ -142,15 +142,15 @@
    "scene_id": "W-005-Book",
    "title": "Scene 5 - The leader",
    "where_when": "Arcadia Lab, Mid Morning",
-   "text": "You stand up, About to head back out the door. Just as you do the door opens.",
+   "text": "You stand up, About to head back out the door. Just as you do the door opens. A armored figure walks in, head convered by an a fancy looking helmet, along with a fancy looking suit of the same armor many others wear.Gold lining and a cape flowing on the back.The helmet has 2 golden wings on the side of it. They are flanked By two individuals. Both Differnt from the people you've seen, Their armor looks the same, but different style.more cleaner then the others you've seen wearing it.The lead woman gestures to you and says something to the other two, who are both wearing helmets, but their body shape can be used to guess the one on the middle's right is male, and the other is female. They both shake their head.\"Not possible. Our soldiers armor would take too long for them to take off and still disappear like this, And I know my soldiers. This individual you rescued is not one of them.\" the lead female nods, then looks at you. Thinking \"well, I can't spare any help here. Already stretch Thin with repairs of our wall and defenses. Our fighters need to remain here while we repair.\" She then looks at you and thinks, and sighs \"You stranger. Approch.\"",
    "choices": [
      {
-       "label": "Approch slowly, slightly intimdiated by her pressence. She is armed",
-       "next_id": "W-005-Wall-shy"
+       "label": "Approch and Confidently Show her the military document",
+       "next_id": "W-005-Book-Show"
      },
      {
-       "label": "Despite everything, Keep your head up and approch with confidence",
-       "next_id": "W-005-Wall-confident"
+       "label": "Approch and Don't show her the document",
+       "next_id": "W-005-Book-NoShow"
      }
    ],
    "exit_line": "This line leads to the next scene."
@@ -173,7 +173,7 @@
    "scene_id": "W-005-Wall",
    "title": "Scene 5 - The leader",
    "where_when": "Arcadia Inner Wall, Early morning",
-   "text": "\"That's enough Kate, Don't scare them more than they already are.\" A Figure, with a authoritative, feminine voice.They're cladded in a fancy set of combat armor. Gold lining and a cape flowing on the back.The helmet has 2 golden wings on the side of it.. They are flanked By two individuals. Both Differnt from the people you've seen, Their armor looks the same, but different style. A more cleaner then the others you've seen wearing it.The lead woman gestures to you and says something to the other two, who are both wearing helmets, but their body shape can be used to guess the one on the middle's right is male, and the other is female. They both shake their head.\"Not possible. Our soldiers armor would take too long for them to take off and still disappear like this, And I know my soldiers. This individual you rescued is not one of them.\" the lead female nods, then looks at you. Thinking \"well, I can't spare any help here. Already stretch Thin with repairs of our wall and defenses. Our fighters need to remain here while we repair.\" She then looks at you and thinks, and sighs \"You stranger. Approch.\" ",
+   "text": "\"That's enough Kate, Don't scare them more than they already are.\" A Figure, with a authoritative, feminine voice.They're cladded in a fancy set of combat armor. Gold lining and a cape flowing on the back.The helmet has 2 golden wings on the side of it. They are flanked By two individuals. Both Differnt from the people you've seen, Their armor looks the same, but different style. A more cleaner then the others you've seen wearing it.The lead woman gestures to you and says something to the other two, who are both wearing helmets, but their body shape can be used to guess the one on the middle's right is male, and the other is female. They both shake their head.\"Not possible. Our soldiers armor would take too long for them to take off and still disappear like this, And I know my soldiers. This individual you rescued is not one of them.\" the lead female nods, then looks at you. Thinking \"well, I can't spare any help here. Already stretch Thin with repairs of our wall and defenses. Our fighters need to remain here while we repair.\" She then looks at you and thinks, and sighs \"You stranger. Approch.\" ",
    "choices": [
      {
        "label": "Approch slowly, slightly intimdiated by her pressence. She is armed",
