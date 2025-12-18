@@ -29,6 +29,36 @@ from lib.gating import compute_display_choices
 # Flask app setup
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get('FLASK_SECRET_KEY', 'What_This_Do')
+_inventory_initialized = False
+#resets inventory
+@app.before_request
+def clear_inventory_on_start():
+   global _inventory_initialized
+   if not _inventory_initialized:
+       session.pop("inventory", None)
+       _inventory_initialized = True
+
+
+app.config['SECRET_KEY'] = os.environ.get('FLASK_SECRET_KEY', 'What_This_Do')
+app.secret_key = "dev-secret-key"
+#inventory
+def get_inventory():
+   if "inventory" not in session:
+       session["inventory"] = []
+   return session["inventory"]
+
+
+def add_item(name, desc=""):
+   inv = get_inventory()
+   if not any(i["name"] == name for i in inv):
+       inv.append({"name": name, "desc": desc})
+       session["inventory"] = inv
+
+
+def remove_item(name):
+   inv = get_inventory()
+   session["inventory"] = [i for i in inv if i["name"] != name]
+
 
 # --- Base paths ---
 BASE_DIR = Path(__file__).parent.resolve()
@@ -188,11 +218,19 @@ def trey_start():
     return redirect(url_for("scene_trey", scene_id="W-001"))
 
 @app.get("/trey/<scene_id>")
+@app.get("/trey/<scene_id>")
 def scene_trey(scene_id):
-    scene = get_trey(scene_id)
-    scene = dict(scene)
-    scene['choices'] = compute_display_choices(scene, session.get('player', {}))
-    return render_template("scene.html", scene=scene, title=scene.get("title"), theme="trey", base_endpoint="scene_trey")
+   scene = get_trey(scene_id)
+   if compute_display_choices:
+       scene = dict(scene)
+       scene['choices'] = compute_display_choices(scene, session.get('player', {}))
+   if "add_item" in scene:
+       item = scene["add_item"]
+       add_item(item["name"], item.get("desc", ""))
+   if "remove_item" in scene:
+       remove_item(scene["remove_item"])
+   return render_template("scene.html",inventory=get_inventory(), scene=scene, title=scene.get("title"), theme="trey", base_endpoint="scene_trey")
+
 # ========= ORACLE (AI) =========
 SCENES_FILE_ORACLE = BASE_DIR / "static" / "data" / "scenes_oracle.json"
 

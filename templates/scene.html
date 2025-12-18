@@ -2,6 +2,73 @@
 {% block title %}{{ title or scene.title }}{% endblock %}
 
 {% block content %}
+<div class="inventory-hud">
+ {% if inventory %}
+   {% for item in inventory %}
+     <div class="inv-slot">
+       <span class="inv-name">{{ item.name }}</span>
+       <span class="inv-tooltip">{{ item.desc }}</span>
+     </div>
+   {% endfor %}
+ {% else %}
+   <div class="inv-empty">Inventory Empty</div>
+ {% endif %}
+</div>
+<style>
+.inventory-hud {
+ display: flex;
+ gap: 10px;
+ padding: 10px;
+ margin-bottom: 16px;
+ background: rgba(0, 0, 0, 0.15);
+ border-radius: 8px;
+ align-items: center;
+}
+
+
+.inv-slot {
+ position: relative;
+ padding: 8px 12px;
+ background: #222;
+ color: #fff;
+ border-radius: 6px;
+ cursor: default;
+ font-size: 0.9em;
+}
+
+
+.inv-name {
+ white-space: nowrap;
+}
+
+
+.inv-tooltip {
+ position: absolute;
+ bottom: 120%;
+ left: 50%;
+ transform: translateX(-50%);
+ background: #000;
+ color: #fff;
+ padding: 6px 10px;
+ border-radius: 6px;
+ font-size: 0.8em;
+ white-space: nowrap;
+ display: none;
+ z-index: 1000;
+}
+
+
+.inv-slot:hover .inv-tooltip {
+ display: block;
+}
+
+
+.inv-empty {
+ font-style: italic;
+ color: #ccc;
+}
+</style>
+
   <h1>{{ scene.title }}</h1>
 
 
