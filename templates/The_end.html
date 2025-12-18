@@ -2,9 +2,27 @@
 {% block title %}{{ title }}{% endblock %}
 
 {% block content %}
+
+{% if theme == 'chris' %}
+<style>
+  .screen {
+    background-image: url("{{ url_for('static', filename='images/mermaids3.jpg') }}");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+</style>
+
+<audio autoplay loop>
+  <source src="{{ url_for('static', filename='audio/siren-singing.mp3') }}" type="audio/mpeg">
+</audio>
+{% endif %}
+
 <h1>{{ title }}</h1>
 <p>{{ msg }}</p>
+
 <div class="choices">
-    <a class="btn" href="{{ url_for('home') }}">Back to Crossroads</a>
+  <a class="btn btn-a" href="{{ url_for('home') }}">Back to Crossroads</a>
 </div>
+
 {% endblock %}

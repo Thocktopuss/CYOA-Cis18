@@ -9,31 +9,54 @@ html, body {
 
 /* === Gradient Background Screen === */
 .screen {
+  position: relative;
   min-height: 100%;
   background: radial-gradient(
     1200px 800px at 70% 10%,
-    #4782e8,
-    #151722 60%,
-    #0d0f18 100%
+    #1a2a33,
+    #11161d 60%,
+    #0b0e12 100%
   );
   display: grid;
-  place-items: center;
+  place-items: end center;
+  padding-bottom: 10vh;
 }
+
+.panel {
+  position: relative;
+  z-index: 1;
+}
+.screen.has-bg::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index: 0;
+  background: radial-gradient(circle at 50% 25%,
+  rgba(0,0,0,0.10),
+  rgba(0,0,0,0.35)
+  );
+}
+
+
+
 
 /* === Center Panel === */
 .panel {
   width: min(800px, 90vw);
   padding: 30px;
-  background: rgba(3, 51, 121, 0.30);   /* more transparent if you want more art behind */
-  border: 3px solid rgba(255, 149, 41, 0.75);
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(2px);
+  border: 2px solid rgba(189, 164, 120, 0.55); /* sand-brass */
   border-radius: 12px;
-  color: #e0d9e5;
+  color: #e6dfd3;
   line-height: 1.6;
-  backdrop-filter: blur(.07px);
-  box-shadow: 0 0 15px 4px rgba(255, 149, 41, 0.45);
-  box-shadow: inset 0 0 50px rgba(0,0,0,0.25);
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.55), inset 0 0 40px rgba(0,0,0,0.35);
   transition: transform 0.3s ease;
+  margin-top: 8vh;
 }
+
+
 
 
 /* === Buttons (Base DNA) === */
@@ -73,34 +96,27 @@ a.btn:hover,
 
 /* === Button Variants === */
 .btn-a {
-  background: linear-gradient(145deg, #1e90ff, #0057e7);
-  border-color: #1e90ff;
-  color: #fff;
+  background: linear-gradient(145deg, #2b3d47, #17232a); /* storm steel */
+  border-color: rgba(125, 170, 170, 0.55);
+  color: #f2f0ea;
 }
-.btn-a:hover {
-  background: linear-gradient(145deg, #3fa9f5, #007fff);
-  box-shadow: 0 0 12px #1e90ff;
-}
+.btn-a:hover { box-shadow: 0 0 12px rgba(125, 170, 170, 0.35); }
 
 .btn-b {
-  background: linear-gradient(145deg, #ff4747, #b71c1c);
-  border-color: #ff4747;
-  color: #fff;
+  background: linear-gradient(145deg, #3b2624, #1f1413); /* dried blood */
+  border-color: rgba(194, 108, 95, 0.65);
+  color: #f2f0ea;
 }
-.btn-b:hover {
-  background: linear-gradient(145deg, #ff6f6f, #d32f2f);
-  box-shadow: 0 0 12px #ff4747;
-}
+.btn-b:hover { box-shadow: 0 0 12px rgba(194, 108, 95, 0.35); }
 
 .btn-c {
-  background: linear-gradient(145deg, #2ecc71, #145a32);
-  border-color: #2ecc71;
-  color: #fff;
+  background: linear-gradient(145deg, #3a3a2b, #1f1f16); /* dirty sand/olive */
+  border-color: rgba(189, 164, 120, 0.65);
+  color: #f2f0ea;
 }
-.btn-c:hover {
-  background: linear-gradient(145deg, #58d68d, #1e8449);
-  box-shadow: 0 0 12px #2ecc71;
+.btn-c:hover { box-shadow: 0 0 12px rgba(189, 164, 120, 0.35);
 }
+
 
 /* === Links (Non-choice) === */
 a {

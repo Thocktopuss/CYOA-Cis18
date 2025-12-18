@@ -241,8 +241,37 @@ def death():
 @app.get("/the_end")
 def the_end():
     theme = request.args.get("theme") or "crossroads"
+    scene_id = request.args.get("scene_id")
+
+    # If the request includes a scene_id, render that scene using scene.html
+    if theme == "chris" and scene_id:
+        scene = dict(get_chris(scene_id))
+        scene['choices'] = []  # force no buttons on END screen
+        return render_template("scene.html", scene=scene, title=scene.get("title"), theme="chris", base_endpoint="scene_chris")
+
+    if theme == "travis" and scene_id:
+        scene = dict(get_travis(scene_id))
+        scene['choices'] = []
+        return render_template("scene.html", scene=scene, title=scene.get("title"), theme="travis", base_endpoint="scene_travis")
+
+    if theme == "charlie" and scene_id:
+        scene = dict(get_charlie(scene_id))
+        scene['choices'] = []
+        return render_template("scene.html", scene=scene, title=scene.get("title"), theme="charlie", base_endpoint="scene_charlie")
+
+    if theme == "trey" and scene_id:
+        scene = dict(get_trey(scene_id))
+        scene['choices'] = []
+        return render_template("scene.html", scene=scene, title=scene.get("title"), theme="trey", base_endpoint="scene_trey")
+
+    # Fallback generic end page
     msg = request.args.get("msg") or "Thanks for playing!"
     return render_template("the_end.html", title="The End", theme=theme, msg=msg)
+
+    # Fallback: original generic ending page (doesn't break anyone else)
+    msg = request.args.get("msg") or "Thanks for playing!"
+    return render_template("the_end.html", title="The End", theme=theme, msg=msg)
+
 
 
 @app.template_filter('replace_all_newlines')

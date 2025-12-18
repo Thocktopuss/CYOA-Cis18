@@ -7,14 +7,21 @@
 
  {% if scene.image %}
   {% if scene.image_mode == 'background' %}
-    <style>
-      .screen {
-        background-image: url("{{ url_for('static', filename='images/' ~ scene.image ~ '.jpg') }}");
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-      }
-    </style>
+{% if scene.image and scene.image_mode == 'background' %}
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const screen = document.querySelector(".screen");
+    if (!screen) return;
+    screen.classList.add("has-bg");
+    screen.style.backgroundImage =
+      "url('{{ url_for('static', filename='images/' ~ scene.image ~ '.jpg') }}')";
+    screen.style.backgroundSize = "cover";
+    screen.style.backgroundPosition = "center 25%";
+    screen.style.backgroundRepeat = "no-repeat";
+    screen.style.backgroundAttachment = "fixed";
+  });
+</script>
+{% endif %}
   {% else %}
     <img class="scene-image"
          src="{{ url_for('static', filename='images/' ~ scene.image ~ '.jpg') }}"
@@ -29,29 +36,32 @@
 
   <p>{{ scene.text | add_player_name | replace_all_newlines }}</p>
 
-  <div class="choices">
-    {% for c in scene.choices %}
-      {% set nextid = (c.next_id|string).strip() %}
-      {% set default_btn_class = 'btn-a' if loop.index == 1 else 'btn-b' if loop.index == 2 else 'btn-c' if loop.index == 3 else 'btn-a' %}
-      {% set variant = (c.variant|string).lower() if c.variant is defined else '' %}
-      {% set color = (c.color|string).lower() if c.color is defined else '' %}
-      {% set btn_class = 'btn-danger' if (variant in ['danger','violent','red']) or (color == 'red') else default_btn_class %}
+<div class="choices">
+  {% for c in scene.choices %}
+  {% set nextid = (c.next_id|string).strip() %}
+  {% set default_btn_class = 'btn-a' if loop.index == 1 else 'btn-b' if loop.index == 2 else 'btn-c' if loop.index == 3 else 'btn-a' %}
+  {% set variant = (c.variant|string).lower() if c.variant is defined else '' %}
+  {% set color = (c.color|string).lower() if c.color is defined else '' %}
+  {% set btn_class = 'btn-danger' if (variant in ['danger','violent','red']) or (color == 'red') else default_btn_class %}
 
-      {% if nextid == 'END' %}
-        <a class="btn {{ btn_class }}" href="{{ url_for('the_end') }}">
-          {{ c.label or 'Finish' }}
-        </a>
-      {% elif nextid == 'DIE' %}
-        <a class="btn {{ btn_class }}" href="{{ url_for('death', msg=(c.death_text or 'Your story ends here.')) }}">
-          {{ c.label or 'You Died' }}
-        </a>
-      {% else %}
-        <a class="btn {{ btn_class }}" href="{{ url_for(base_endpoint, scene_id=nextid) }}">
-          {{ c.label }}
-        </a>
-      {% endif %}
-    {% endfor %}
-  </div>
+  {% if nextid == 'END' %}
+  <a class="btn {{ btn_class }}" href="{{ url_for('the_end', theme=theme) }}">
+    {{ c.label or 'End of Story' }}
+  </a>
+  {% elif nextid == 'DIE' %}
+  <a class="btn {{ btn_class }}" href="{{ url_for('death', msg=(c.death_text or 'Your story ends here.'), theme=theme) }}">
+    {{ c.label or 'You Died' }}
+  </a>
+  {% else %}
+  <a class="btn {{ btn_class }}" href="{{ url_for(base_endpoint, scene_id=nextid) }}">
+    {{ c.label }}
+  </a>
+  {% endif %}
+  {% endfor %}
+</div>
+
+
+
 
   {% if scene.exit_line %}
     <p> {{ scene.exit_line | add_player_name | replace_all_newlines | safe }}</p>
